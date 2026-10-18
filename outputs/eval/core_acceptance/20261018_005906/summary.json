@@ -1,0 +1,8 @@
+{
+  "cases": 5,
+  "turns": 11,
+  "http_success": 11,
+  "fallbacks": [],
+  "quality_gate": "pending_manual_review",
+  "note": "HTTP success and nonempty answers do not establish factual or citation correctness"
+}

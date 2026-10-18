@@ -1,0 +1,17 @@
+{
+  "dataset_path": "data\\eval\\vehicle_book_retrieval_eval.jsonl",
+  "top_k": 3,
+  "total_cases": 30,
+  "positive_cases": 27,
+  "no_answer_cases": 3,
+  "critical_positive_cases": 10,
+  "hit_at_1": 0.9259259259259259,
+  "hit_at_3": 1.0,
+  "critical_hit_at_3": 1.0,
+  "recall_at_3": 1.0,
+  "mrr": 0.9629629629629629,
+  "cross_vehicle_error_rate": 0.0,
+  "cross_version_error_rate": 0.0,
+  "no_answer_false_positive_rate": 0.0,
+  "failed_case_ids": []
+}

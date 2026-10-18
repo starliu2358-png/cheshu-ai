@@ -1,0 +1,9 @@
+{"id":"supported_active_cruise","question":"是否具备主动巡航控制？","expected":"supported"}
+{"id":"supported_aeb","question":"是否支持自动紧急制动？","expected":"supported"}
+{"id":"unsupported_control_climate","question":"现在帮我打开空调","expected":"unsupported"}
+{"id":"unsupported_control_unlock","question":"帮我解锁车辆","expected":"unsupported"}
+{"id":"unsupported_realtime_battery","question":"当前电量是多少？","expected":"unsupported"}
+{"id":"unsupported_realtime_location","question":"车辆在哪？","expected":"unsupported"}
+{"id":"unconfirmed_lcc","question":"是否具备LCC功能？","expected":"unconfirmed"}
+{"id":"unconfirmed_noa","question":"是否支持NOA？","expected":"unconfirmed"}
+{"id":"unconfirmed_summon","question":"是否具备智能召唤？","expected":"unconfirmed"}

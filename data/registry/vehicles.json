@@ -1,0 +1,66 @@
+[
+  {
+    "vehicle_id": "alpha_aster_x1_max_v1",
+    "oem": "OEM_ALPHA",
+    "model": "ASTER_X1",
+    "trim": "MAX",
+    "software_version": "1.0",
+    "release_status": "released"
+  },
+  {
+    "vehicle_id": "alpha_aster_x1_max_v2",
+    "oem": "OEM_ALPHA",
+    "model": "ASTER_X1",
+    "trim": "MAX",
+    "software_version": "2.0",
+    "release_status": "pre_release"
+  },
+  {
+    "vehicle_id": "alpha_aster_x2_max_v1",
+    "oem": "OEM_ALPHA",
+    "model": "ASTER_X2",
+    "trim": "MAX",
+    "software_version": "1.0",
+    "release_status": "released"
+  },
+  {
+    "vehicle_id": "model3-rwd-cn-current",
+    "oem": "Tesla",
+    "model": "Model 3",
+    "trim": "RWD",
+    "software_version": null,
+    "release_status": "released",
+    "market": "CN",
+    "display_name": "Model 3 后轮驱动版"
+  },
+  {
+    "vehicle_id": "model3-lr-rwd-cn-current",
+    "oem": "Tesla",
+    "model": "Model 3",
+    "trim": "LR_RWD",
+    "software_version": null,
+    "release_status": "released",
+    "market": "CN",
+    "display_name": "Model 3 长续航后轮驱动版"
+  },
+  {
+    "vehicle_id": "model3-lr-awd-cn-current",
+    "oem": "Tesla",
+    "model": "Model 3",
+    "trim": "LR_AWD",
+    "software_version": null,
+    "release_status": "released",
+    "market": "CN",
+    "display_name": "Model 3 长续航全轮驱动版"
+  },
+  {
+    "vehicle_id": "model3-performance-awd-cn-current",
+    "oem": "Tesla",
+    "model": "Model 3",
+    "trim": "PERFORMANCE_AWD",
+    "software_version": null,
+    "release_status": "released",
+    "market": "CN",
+    "display_name": "Model 3 Performance 高性能全轮驱动版"
+  }
+]

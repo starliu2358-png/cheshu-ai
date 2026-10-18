@@ -1,0 +1,9 @@
+{
+  "alpha_aster_x1_max_v1": 0.55,
+  "alpha_aster_x1_max_v2": 0.55,
+  "alpha_aster_x2_max_v1": 0.55,
+  "model3-rwd-cn-current": 0.41,
+  "model3-lr-rwd-cn-current": 0.41,
+  "model3-lr-awd-cn-current": 0.41,
+  "model3-performance-awd-cn-current": 0.41
+}

@@ -1,0 +1,74 @@
+{
+  "baseline_id": "vehicle_book_release_v1",
+  "created_at": "2026-10-04T08:05:48.836503+00:00",
+  "git_revision": "2069668f0118e0b24b5a7b4fb054f0996ae0b749",
+  "datasets": {
+    "retrieval": {
+      "path": "data/eval/vehicle_book_retrieval_eval.jsonl",
+      "checksum": "b6c534db9d77ba5d7f39ccd3e65178db90e9c6a5665e79b5d075cc536180a23e"
+    },
+    "answer": {
+      "path": "data/eval/vehicle_book_answer_eval.jsonl",
+      "checksum": "7035047693a944cd35829129cdef83e39f30db3aaf1d2e0834a5315b1cb6dc2d"
+    }
+  },
+  "registry_checksum": "5039253ea1f41bea1725ef4e18d426ebf02868802206005da6acbab2e3a833c5",
+  "top_k": {
+    "retrieval": 3,
+    "answer": 4
+  },
+  "report_format_version": "vehicle-book-release-gate-v1",
+  "hard_metrics": {
+    "schema_validation_pass_rate": 1.0,
+    "duplicate_active_document_id_count": 0,
+    "duplicate_active_chunk_id_count": 0,
+    "broken_citation_anchor_count": 0,
+    "wrong_vehicle_retrieval_rate": 0.0,
+    "wrong_version_retrieval_rate": 0.0,
+    "retrieval_recall_at_3": 1.0,
+    "retrieval_slices": {
+      "model:ASTER_X1": {
+        "sample_count": 20,
+        "positive_sample_count": 18,
+        "recall_at_3": 1.0
+      },
+      "model:ASTER_X2": {
+        "sample_count": 10,
+        "positive_sample_count": 9,
+        "recall_at_3": 1.0
+      },
+      "no-answer": {
+        "sample_count": 3,
+        "positive_sample_count": 0,
+        "recall_at_3": null,
+        "no_answer_false_positive_rate": 0.0,
+        "fallback_accuracy": null
+      },
+      "oem:OEM_ALPHA": {
+        "sample_count": 30,
+        "positive_sample_count": 27,
+        "recall_at_3": 1.0
+      },
+      "risk:high_or_critical": {
+        "sample_count": 10,
+        "positive_sample_count": 10,
+        "recall_at_3": 1.0
+      },
+      "software_version:1.0": {
+        "sample_count": 20,
+        "positive_sample_count": 18,
+        "recall_at_3": 1.0
+      },
+      "software_version:2.0": {
+        "sample_count": 10,
+        "positive_sample_count": 9,
+        "recall_at_3": 1.0
+      }
+    },
+    "citation_correctness": 1.0,
+    "fallback_no_answer_accuracy": 1.0,
+    "fallback_no_answer_sample_count": 3,
+    "critical_error_count": 0,
+    "pytest_pass_rate": 1.0
+  }
+}

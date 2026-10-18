@@ -1,0 +1,1039 @@
+[
+  {
+    "case": "X1",
+    "group": "regression",
+    "turn": 1,
+    "question": "怎么停止充电？",
+    "criterion": "正常停充与解锁，不主动使用应急拉索",
+    "seconds": 4.97,
+    "status": 200,
+    "context_before": null,
+    "response": {
+      "answerSource": "official",
+      "answerId": "26f8cbda-d73c-4cf8-b6d3-7fd74f52d0b0",
+      "conversationId": "198da1d6-fc68-40cb-bfc1-127cdaa18b1d",
+      "answer": "在触摸屏上选择“停止充电”即可结束充电。需要拔下电缆时，先让车辆解锁或识别到有效钥匙，再长按连接器按钮解开闩锁，然后拔出连接器；盖板随后自动关闭，不要用手强行关盖板。\n\n第三方充电电缆没有解锁按钮时，可长拉左后车门把手数秒来停止充电、松开电缆。普通停止充电不需要使用应急释放拉索。",
+      "boundaryResult": null,
+      "citations": [
+        {
+          "id": "tesla_model3_rwd_cn_charging_2024plus",
+          "title": "Tesla 中国 Model 3 车主手册",
+          "section": "停止充电与正常拔出连接器",
+          "url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/GUID-BEE08D47-0CE0-4BDD-83F2-9854FB3D578F.html",
+          "retrievedAt": "2026-10-18"
+        }
+      ],
+      "speechText": "在触摸屏上选择“停止充电”即可结束充电。需要拔下电缆时，先让车辆解锁或识别到有效钥匙，再长按连接器按钮解开闩锁，然后拔出连接器；盖板随后自动关闭，不要用手强行关盖板。\n\n第三方充电电缆没有解锁按钮时，可长拉左后车门把手数秒来停止充电、松开电缆。普通停止充电不需要使用应急释放拉索。",
+      "fallbackReason": null,
+      "clarificationOptions": []
+    },
+    "audit": {
+      "run_id": "5d78c150-5c73-43ed-989d-2bce4615f646",
+      "vehicle_id": "model3-rwd-cn-current",
+      "conversation_id": "198da1d6-fc68-40cb-bfc1-127cdaa18b1d",
+      "model_turns": 3,
+      "retrieval_calls": 1,
+      "repair_attempts": 0,
+      "stop_reason": "completed",
+      "duration_ms": 4937,
+      "tool_calls": [
+        {
+          "tool": "search_vehicle_book",
+          "query": "如何停止充电 结束充电 充电口解锁",
+          "duration_ms": 62,
+          "result_chunk_ids": [
+            "tesla_model3_rwd_cn_charging_2024plus:停止充电与正常拔出连接器",
+            "tesla_model3_rwd_cn_charging_interfaces_2024plus:充电口数量与交流直流接口",
+            "tesla_model3_rwd_cn_manual_coverage_2024plus:定时充电-出发时间和续航建议"
+          ],
+          "error": null
+        }
+      ],
+      "evidence_count": 3,
+      "model_reported_insufficient": false,
+      "answer_source": "official",
+      "validation_errors": [],
+      "review_attempts": 1,
+      "reviewed_segments": [
+        {
+          "cited_chunk_ids": [
+            "tesla_model3_rwd_cn_charging_2024plus:停止充电与正常拔出连接器"
+          ]
+        },
+        {
+          "cited_chunk_ids": [
+            "tesla_model3_rwd_cn_charging_2024plus:停止充电与正常拔出连接器"
+          ]
+        }
+      ],
+      "recorded_at": "2026-10-17T16:59:34.719738+00:00"
+    },
+    "quality_review": "pending"
+  },
+  {
+    "case": "X1",
+    "group": "regression",
+    "turn": 2,
+    "question": "停了以后怎么拔枪？",
+    "criterion": "正常停充与解锁，不主动使用应急拉索",
+    "seconds": 7.02,
+    "status": 200,
+    "context_before": {
+      "referenced_trim": null,
+      "context_relation": "new_or_unclear",
+      "explicit_current_feature": null,
+      "current_question": "停了以后怎么拔枪？",
+      "clarification_reply": null,
+      "vehicle_id": "model3-rwd-cn-current",
+      "current_topic": "充电",
+      "current_feature": "充电",
+      "confirmed_entities": {
+        "vehicle_id": "model3-rwd-cn-current",
+        "feature": "充电"
+      },
+      "unresolved_question": null,
+      "pending_clarification": null,
+      "clarification_options": [],
+      "follow_up_focus": null,
+      "standalone_query": null,
+      "previous_answer": "在触摸屏上选择“停止充电”即可结束充电。需要拔下电缆时，先让车辆解锁或识别到有效钥匙，再长按连接器按钮解开闩锁，然后拔出连接器；盖板随后自动关闭，不要用手强行关盖板。\n\n第三方充电电缆没有解锁按钮时，可长拉左后车门把手数秒来停止充电、松开电缆。普通停止充电不需要使用应急释放拉索。",
+      "memory_summary": null,
+      "recent_turns": [
+        {
+          "question": "怎么停止充电？",
+          "answer": "在触摸屏上选择“停止充电”即可结束充电。需要拔下电缆时，先让车辆解锁或识别到有效钥匙，再长按连接器按钮解开闩锁，然后拔出连接器；盖板随后自动关闭，不要用手强行关盖板。\n\n第三方充电电缆没有解锁按钮时，可长拉左后车门把手数秒来停止充电、松开电缆。普通停止充电不需要使用应急释放拉索。",
+          "cited_chunk_ids": [
+            "tesla_model3_rwd_cn_charging_2024plus:停止充电与正常拔出连接器"
+          ],
+          "boundary_result": null,
+          "answer_source": "official"
+        }
+      ]
+    },
+    "response": {
+      "answerSource": "official",
+      "answerId": "aaeab927-e498-45ae-a8ce-79615c18228f",
+      "conversationId": "198da1d6-fc68-40cb-bfc1-127cdaa18b1d",
+      "answer": "需要拔下电缆时，先让车辆解锁或识别到有效钥匙，再长按连接器按钮解开闩锁，然后拔出连接器；盖板随后自动关闭，不要用手强行关盖板。\n\n第三方充电电缆没有解锁按钮时，手册还提供长拉左后车门把手数秒的停止充电、松开电缆方法。\n\n若连接器无法正常拔出，先确认车辆已解锁或识别钥匙，尝试手柄按钮、触摸屏或手机应用的常规释放方式，不要强拉锁住的电缆。若是低温冻结，可在“控制 > 维护 > 入口加热器”加热解冻（最长两小时）。仍无法正常释放时，联系服务中心。",
+      "boundaryResult": null,
+      "citations": [
+        {
+          "id": "tesla_model3_rwd_cn_charging_2024plus",
+          "title": "Tesla 中国 Model 3 车主手册",
+          "section": "停止充电与正常拔出连接器",
+          "url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/GUID-BEE08D47-0CE0-4BDD-83F2-9854FB3D578F.html",
+          "retrievedAt": "2026-10-18"
+        },
+        {
+          "id": "tesla_model3_rwd_cn_charging_2024plus",
+          "title": "Tesla 中国 Model 3 车主手册",
+          "section": "充电连接器无法正常拔出",
+          "url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/GUID-BEE08D47-0CE0-4BDD-83F2-9854FB3D578F.html",
+          "retrievedAt": "2026-10-18"
+        }
+      ],
+      "speechText": "需要拔下电缆时，先让车辆解锁或识别到有效钥匙，再长按连接器按钮解开闩锁，然后拔出连接器；盖板随后自动关闭，不要用手强行关盖板。\n\n第三方充电电缆没有解锁按钮时，手册还提供长拉左后车门把手数秒的停止充电、松开电缆方法。\n\n若连接器无法正常拔出，先确认车辆已解锁或识别钥匙，尝试手柄按钮、触摸屏或手机应用的常规释放方式，不要强拉锁住的电缆。若是低温冻结，可在“控制 > 维护 > 入口加热器”加热解冻（最长两小时）。仍无法正常释放时，联系服务中心。",
+      "fallbackReason": null,
+      "clarificationOptions": []
+    },
+    "audit": {
+      "run_id": "f8df9e57-f1af-4af6-b3c9-682604dedd4d",
+      "vehicle_id": "model3-rwd-cn-current",
+      "conversation_id": "198da1d6-fc68-40cb-bfc1-127cdaa18b1d",
+      "model_turns": 3,
+      "retrieval_calls": 1,
+      "repair_attempts": 0,
+      "stop_reason": "completed",
+      "duration_ms": 7000,
+      "tool_calls": [
+        {
+          "tool": "search_vehicle_book",
+          "query": "停止充电后拔出充电枪连接器 解锁按钮",
+          "duration_ms": 47,
+          "result_chunk_ids": [
+            "tesla_model3_rwd_cn_charging_2024plus:停止充电与正常拔出连接器",
+            "tesla_model3_rwd_cn_charging_2024plus:充电连接器无法正常拔出",
+            "tesla_model3_rwd_cn_charging_interfaces_2024plus:充电口数量与交流直流接口"
+          ],
+          "error": null
+        }
+      ],
+      "evidence_count": 3,
+      "model_reported_insufficient": false,
+      "answer_source": "official",
+      "validation_errors": [],
+      "review_attempts": 1,
+      "reviewed_segments": [
+        {
+          "cited_chunk_ids": [
+            "tesla_model3_rwd_cn_charging_2024plus:停止充电与正常拔出连接器"
+          ]
+        },
+        {
+          "cited_chunk_ids": [
+            "tesla_model3_rwd_cn_charging_2024plus:停止充电与正常拔出连接器"
+          ]
+        },
+        {
+          "cited_chunk_ids": [
+            "tesla_model3_rwd_cn_charging_2024plus:充电连接器无法正常拔出"
+          ]
+        }
+      ],
+      "recorded_at": "2026-10-17T16:59:41.743009+00:00"
+    },
+    "quality_review": "pending"
+  },
+  {
+    "case": "X2",
+    "group": "regression",
+    "turn": 1,
+    "question": "充电枪锁住拔不下来怎么办？",
+    "criterion": "常规优先；手动释放需停充、无裸露高压线，不能同时拉索拔枪",
+    "seconds": 6.12,
+    "status": 200,
+    "context_before": null,
+    "response": {
+      "answerSource": "official",
+      "answerId": "d5ddf6f2-9482-4b34-8ecc-9ddea4e30577",
+      "conversationId": "056d85c9-d119-4595-9deb-5304922579b7",
+      "answer": "在触摸屏上选择“停止充电”即可结束充电。需要拔下电缆时，先让车辆解锁或识别到有效钥匙，再长按连接器按钮解开闩锁，然后拔出连接器；盖板随后自动关闭，不要用手强行关盖板。第三方充电电缆没有解锁按钮时，可长拉左后车门把手数秒来停止充电并松开电缆。普通停止充电不需要使用应急释放拉索。\n\n如果常规方式无法释放，先确认车辆已解锁或识别钥匙，尝试手柄按钮、触摸屏或手机应用的常规释放方式，不要强拉锁住的电缆。若是低温冻结，可在“控制 > 维护 > 入口加热器”加热解冻（最长两小时）。仍无法正常释放时，核对官方手册的异常释放说明；无法判断安全条件时联系服务中心。\n\n仅常规释放全部无效时才考虑手动释放：先在触摸屏确认车辆已停止充电，必要时先点“停止充电”。打开行李箱，向下拉充电接口释放拉索，完成解锁后再拔电缆；不得一边拉索一边拔电缆。正在充电或看到橙色高压导线暴露时禁止操作。反复使用释放拉索可能损坏设备；不确定能否安全完成时，应联系服务中心。",
+      "boundaryResult": null,
+      "citations": [
+        {
+          "id": "tesla_model3_rwd_cn_charging_2024plus",
+          "title": "Tesla 中国 Model 3 车主手册",
+          "section": "停止充电与正常拔出连接器",
+          "url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/GUID-BEE08D47-0CE0-4BDD-83F2-9854FB3D578F.html",
+          "retrievedAt": "2026-10-18"
+        },
+        {
+          "id": "tesla_model3_rwd_cn_charging_2024plus",
+          "title": "Tesla 中国 Model 3 车主手册",
+          "section": "充电连接器无法正常拔出",
+          "url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/GUID-BEE08D47-0CE0-4BDD-83F2-9854FB3D578F.html",
+          "retrievedAt": "2026-10-18"
+        },
+        {
+          "id": "tesla_model3_rwd_cn_charging_2024plus",
+          "title": "Tesla 中国 Model 3 车主手册",
+          "section": "异常情况下手动释放充电电缆",
+          "url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/GUID-BEE08D47-0CE0-4BDD-83F2-9854FB3D578F.html",
+          "retrievedAt": "2026-10-18"
+        }
+      ],
+      "speechText": "在触摸屏上选择“停止充电”即可结束充电。需要拔下电缆时，先让车辆解锁或识别到有效钥匙，再长按连接器按钮解开闩锁，然后拔出连接器；盖板随后自动关闭，不要用手强行关盖板。第三方充电电缆没有解锁按钮时，可长拉左后车门把手数秒来停止充电并松开电缆。普通停止充电不需要使用应急释放拉索。\n\n如果常规方式无法释放，先确认车辆已解锁或识别钥匙，尝试手柄按钮、触摸屏或手机应用的常规释放方式，不要强拉锁住的电缆。若是低温冻结，可在“控制 > 维护 > 入口加热器”加热解冻（最长两小时）。仍无法正常释放时，核对官方手册的异常释放说明；无法判断安全条件时联系服务中心。\n\n仅常规释放全部无效时才考虑手动释放：先在触摸屏确认车辆已停止充电，必要时先点“停止充电”。打开行李箱，向下拉充电接口释放拉索，完成解锁后再拔电缆；不得一边拉索一边拔电缆。正在充电或看到橙色高压导线暴露时禁止操作。反复使用释放拉索可能损坏设备；不确定能否安全完成时，应联系服务中心。",
+      "fallbackReason": null,
+      "clarificationOptions": []
+    },
+    "audit": {
+      "run_id": "5228cab1-0147-4e50-a766-1164eee4838f",
+      "vehicle_id": "model3-rwd-cn-current",
+      "conversation_id": "056d85c9-d119-4595-9deb-5304922579b7",
+      "model_turns": 3,
+      "retrieval_calls": 1,
+      "repair_attempts": 0,
+      "stop_reason": "completed",
+      "duration_ms": 6094,
+      "tool_calls": [
+        {
+          "tool": "search_vehicle_book",
+          "query": "充电枪锁住无法拔出 应急解锁",
+          "duration_ms": 47,
+          "result_chunk_ids": [
+            "tesla_model3_rwd_cn_charging_2024plus:充电连接器无法正常拔出",
+            "tesla_model3_rwd_cn_charging_2024plus:停止充电与正常拔出连接器",
+            "tesla_model3_rwd_cn_charging_interfaces_2024plus:充电口数量与交流直流接口",
+            "tesla_model3_rwd_cn_charging_2024plus:异常情况下手动释放充电电缆"
+          ],
+          "error": null
+        }
+      ],
+      "evidence_count": 4,
+      "model_reported_insufficient": false,
+      "answer_source": "official",
+      "validation_errors": [],
+      "review_attempts": 1,
+      "reviewed_segments": [
+        {
+          "cited_chunk_ids": [
+            "tesla_model3_rwd_cn_charging_2024plus:停止充电与正常拔出连接器"
+          ]
+        },
+        {
+          "cited_chunk_ids": [
+            "tesla_model3_rwd_cn_charging_2024plus:充电连接器无法正常拔出"
+          ]
+        },
+        {
+          "cited_chunk_ids": [
+            "tesla_model3_rwd_cn_charging_2024plus:异常情况下手动释放充电电缆"
+          ]
+        }
+      ],
+      "recorded_at": "2026-10-17T16:59:47.861082+00:00"
+    },
+    "quality_review": "pending"
+  },
+  {
+    "case": "X2",
+    "group": "regression",
+    "turn": 2,
+    "question": "常规方式都失败了，手动释放有什么前提？",
+    "criterion": "常规优先；手动释放需停充、无裸露高压线，不能同时拉索拔枪",
+    "seconds": 4.71,
+    "status": 200,
+    "context_before": {
+      "referenced_trim": null,
+      "context_relation": "new_or_unclear",
+      "explicit_current_feature": null,
+      "current_question": "常规方式都失败了，手动释放有什么前提？",
+      "clarification_reply": null,
+      "vehicle_id": "model3-rwd-cn-current",
+      "current_topic": "充电",
+      "current_feature": "充电",
+      "confirmed_entities": {
+        "vehicle_id": "model3-rwd-cn-current",
+        "feature": "充电"
+      },
+      "unresolved_question": null,
+      "pending_clarification": null,
+      "clarification_options": [],
+      "follow_up_focus": null,
+      "standalone_query": null,
+      "previous_answer": "在触摸屏上选择“停止充电”即可结束充电。需要拔下电缆时，先让车辆解锁或识别到有效钥匙，再长按连接器按钮解开闩锁，然后拔出连接器；盖板随后自动关闭，不要用手强行关盖板。第三方充电电缆没有解锁按钮时，可长拉左后车门把手数秒来停止充电并松开电缆。普通停止充电不需要使用应急释放拉索。\n\n如果常规方式无法释放，先确认车辆已解锁或识别钥匙，尝试手柄按钮、触摸屏或手机应用的常规释放方式，不要强拉锁住的电缆。若是低温冻结，可在“控制 > 维护 > 入口加热器”加热解冻（最长两小时）。仍无法正常释放时，核对官方手册的异常释放说明；无法判断安全条件时联系服务中心。\n\n仅常规释放全部无效时才考虑手动释放：先在触摸屏确认车辆已停止充电，必要时先点“停止充电”。打开行李箱，向下拉充电接口释放拉索，完成解锁后再拔电缆；不得一边拉索一边拔电缆。正在充电或看到橙色高压导线暴露时禁止操作。反复使用释放拉索可能损坏设备；不确定能否安全完成时，应联系服务中心。",
+      "memory_summary": null,
+      "recent_turns": [
+        {
+          "question": "充电枪锁住拔不下来怎么办？",
+          "answer": "在触摸屏上选择“停止充电”即可结束充电。需要拔下电缆时，先让车辆解锁或识别到有效钥匙，再长按连接器按钮解开闩锁，然后拔出连接器；盖板随后自动关闭，不要用手强行关盖板。第三方充电电缆没有解锁按钮时，可长拉左后车门把手数秒来停止充电并松开电缆。普通停止充电不需要使用应急释放拉索。\n\n如果常规方式无法释放，先确认车辆已解锁或识别钥匙，尝试手柄按钮、触摸屏或手机应用的常规释放方式，不要强拉锁住的电缆。若是低温冻结，可在“控制 > 维护 > 入口加热器”加热解冻（最长两小时）。仍无法正常释放时，核对官方手册的异常释放说明；无法判断安全条件时联系服务中心。\n\n仅常规释放全部无效时才考虑手动释放：先在触摸屏确认车辆已停止充电，必要时先点“停止充电”。打开行李箱，向下拉充电接口释放拉索，完成解锁后再拔电缆；不得一边拉索一边拔电缆。正在充电或看到橙色高压导线暴露时禁止操作。反复使用释放拉索可能损坏设备；不确定能否安全完成时，应联系服务中心。",
+          "cited_chunk_ids": [
+            "tesla_model3_rwd_cn_charging_2024plus:停止充电与正常拔出连接器",
+            "tesla_model3_rwd_cn_charging_2024plus:充电连接器无法正常拔出",
+            "tesla_model3_rwd_cn_charging_2024plus:异常情况下手动释放充电电缆"
+          ],
+          "boundary_result": null,
+          "answer_source": "official"
+        }
+      ]
+    },
+    "response": {
+      "answerSource": "official",
+      "answerId": "46ae19df-8c2d-4ba1-8bf3-b2ee90d5c954",
+      "conversationId": "056d85c9-d119-4595-9deb-5304922579b7",
+      "answer": "仅常规释放全部无效时才考虑手动释放充电电缆，不能作为日常拔枪方式。\n\n先在触摸屏确认车辆已停止充电，必要时先点“停止充电”。打开行李箱，向下拉充电接口释放拉索，完成解锁后再拔电缆；不得一边拉索一边拔电缆。\n\n正在充电或看到橙色高压导线暴露时禁止操作。反复使用释放拉索可能损坏设备；不确定能否安全完成时，应联系服务中心。",
+      "boundaryResult": null,
+      "citations": [
+        {
+          "id": "tesla_model3_rwd_cn_charging_2024plus",
+          "title": "Tesla 中国 Model 3 车主手册",
+          "section": "异常情况下手动释放充电电缆",
+          "url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/GUID-BEE08D47-0CE0-4BDD-83F2-9854FB3D578F.html",
+          "retrievedAt": "2026-10-18"
+        }
+      ],
+      "speechText": "仅常规释放全部无效时才考虑手动释放充电电缆，不能作为日常拔枪方式。\n\n先在触摸屏确认车辆已停止充电，必要时先点“停止充电”。打开行李箱，向下拉充电接口释放拉索，完成解锁后再拔电缆；不得一边拉索一边拔电缆。\n\n正在充电或看到橙色高压导线暴露时禁止操作。反复使用释放拉索可能损坏设备；不确定能否安全完成时，应联系服务中心。",
+      "fallbackReason": null,
+      "clarificationOptions": []
+    },
+    "audit": {
+      "run_id": "522636e0-eee2-4c53-95b3-92afba139d86",
+      "vehicle_id": "model3-rwd-cn-current",
+      "conversation_id": "056d85c9-d119-4595-9deb-5304922579b7",
+      "model_turns": 3,
+      "retrieval_calls": 1,
+      "repair_attempts": 0,
+      "stop_reason": "completed",
+      "duration_ms": 4688,
+      "tool_calls": [
+        {
+          "tool": "search_vehicle_book",
+          "query": "异常情况下手动释放充电电缆 前提条件 释放拉索",
+          "duration_ms": 47,
+          "result_chunk_ids": [
+            "tesla_model3_rwd_cn_charging_2024plus:异常情况下手动释放充电电缆",
+            "tesla_model3_rwd_cn_charging_2024plus:停止充电与正常拔出连接器",
+            "tesla_model3_rwd_cn_charging_2024plus:连接充电电缆",
+            "tesla_model3_rwd_cn_charging_2024plus:充电连接器无法正常拔出"
+          ],
+          "error": null
+        }
+      ],
+      "evidence_count": 4,
+      "model_reported_insufficient": false,
+      "answer_source": "official",
+      "validation_errors": [],
+      "review_attempts": 1,
+      "reviewed_segments": [
+        {
+          "cited_chunk_ids": [
+            "tesla_model3_rwd_cn_charging_2024plus:异常情况下手动释放充电电缆"
+          ]
+        },
+        {
+          "cited_chunk_ids": [
+            "tesla_model3_rwd_cn_charging_2024plus:异常情况下手动释放充电电缆"
+          ]
+        },
+        {
+          "cited_chunk_ids": [
+            "tesla_model3_rwd_cn_charging_2024plus:异常情况下手动释放充电电缆"
+          ]
+        }
+      ],
+      "recorded_at": "2026-10-17T16:59:52.579204+00:00"
+    },
+    "quality_review": "pending"
+  },
+  {
+    "case": "X3",
+    "group": "regression",
+    "turn": 1,
+    "question": "长续航后驱续航更长，是不是一定更省电？",
+    "criterion": "不从续航或峰值功率作因果保证",
+    "seconds": 5.59,
+    "status": 200,
+    "context_before": null,
+    "response": {
+      "answerSource": "mixed",
+      "answerId": "b3a4c0a5-540f-423f-ab7a-8f3f06aa793c",
+      "conversationId": "18b0ec50-eedf-4eb0-ba29-1618e7935997",
+      "answer": "官网资料给出的续航是：使用 18 英寸轮毂时，后轮驱动版 634 公里、长续航后轮驱动版 830 公里（19 英寸轮毂为 800 公里），均为 CLTC 预估值；实际续航会随车速、天气、温度控制、路况和驾驶方式变化。不过，这些资料里没有列出电池容量或百公里电耗，因此不能由续航更长直接推断更省电。\n\n一般来说，续航更长可能来自更大的电池容量，也可能来自更优的风阻与效率；是否更省电要看单位电量的实际消耗，比如每百公里耗电多少，所以续航长与更省电不能直接划等号。",
+      "boundaryResult": "unconfirmed",
+      "citations": [
+        {
+          "id": "tesla_model3_rwd_cn_configuration_current",
+          "title": "Tesla 中国 Model 3 产品页",
+          "section": "续航差异",
+          "url": "https://www.tesla.cn/model3",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "id": "tesla_model3_rwd_cn_configuration_current",
+          "title": "Tesla 中国 Model 3 产品页",
+          "section": "不同配置的主要差异",
+          "url": "https://www.tesla.cn/model3",
+          "retrievedAt": "2026-10-11"
+        }
+      ],
+      "speechText": "官网资料给出的续航是：使用 18 英寸轮毂时，后轮驱动版 634 公里、长续航后轮驱动版 830 公里（19 英寸轮毂为 800 公里），均为 CLTC 预估值；实际续航会随车速、天气、温度控制、路况和驾驶方式变化。不过，这些资料里没有列出电池容量或百公里电耗，因此不能由续航更长直接推断更省电。\n\n一般来说，续航更长可能来自更大的电池容量，也可能来自更优的风阻与效率；是否更省电要看单位电量的实际消耗，比如每百公里耗电多少，所以续航长与更省电不能直接划等号。",
+      "fallbackReason": null,
+      "clarificationOptions": []
+    },
+    "audit": {
+      "run_id": "09e0f05b-4f50-4c52-bac3-f9e5f0b1d644",
+      "vehicle_id": "model3-rwd-cn-current",
+      "conversation_id": "18b0ec50-eedf-4eb0-ba29-1618e7935997",
+      "model_turns": 3,
+      "retrieval_calls": 1,
+      "repair_attempts": 0,
+      "stop_reason": "completed",
+      "duration_ms": 5563,
+      "tool_calls": [
+        {
+          "tool": "search_vehicle_book",
+          "query": "Model 3 长续航后驱 续航里程 能耗 百公里电耗",
+          "duration_ms": 63,
+          "result_chunk_ids": [
+            "tesla_model3_rwd_cn_configuration_current:不同配置的主要差异",
+            "tesla_model3_rwd_cn_configuration_current:加速情况",
+            "tesla_model3_rwd_cn_configuration_current:续航差异",
+            "tesla_model3_rwd_cn_configuration_current:充电功率差异"
+          ],
+          "error": null
+        }
+      ],
+      "evidence_count": 4,
+      "model_reported_insufficient": false,
+      "answer_source": "mixed",
+      "validation_errors": [],
+      "review_attempts": 1,
+      "reviewed_segments": [
+        {
+          "cited_chunk_ids": [
+            "tesla_model3_rwd_cn_configuration_current:续航差异",
+            "tesla_model3_rwd_cn_configuration_current:不同配置的主要差异"
+          ]
+        }
+      ],
+      "recorded_at": "2026-10-17T16:59:58.174320+00:00"
+    },
+    "quality_review": "pending"
+  },
+  {
+    "case": "X3",
+    "group": "regression",
+    "turn": 2,
+    "question": "250千瓦是不是整个充电过程都比170千瓦快？",
+    "criterion": "不从续航或峰值功率作因果保证",
+    "seconds": 5.97,
+    "status": 200,
+    "context_before": {
+      "referenced_trim": null,
+      "context_relation": "new_or_unclear",
+      "explicit_current_feature": "充电",
+      "current_question": "250千瓦是不是整个充电过程都比170千瓦快？",
+      "clarification_reply": null,
+      "vehicle_id": "model3-rwd-cn-current",
+      "current_topic": "续航",
+      "current_feature": "续航",
+      "confirmed_entities": {
+        "vehicle_id": "model3-rwd-cn-current",
+        "discussed_trim": "长续航后轮驱动版",
+        "feature": "续航"
+      },
+      "unresolved_question": null,
+      "pending_clarification": null,
+      "clarification_options": [],
+      "follow_up_focus": null,
+      "standalone_query": null,
+      "previous_answer": "官网资料给出的续航是：使用 18 英寸轮毂时，后轮驱动版 634 公里、长续航后轮驱动版 830 公里（19 英寸轮毂为 800 公里），均为 CLTC 预估值；实际续航会随车速、天气、温度控制、路况和驾驶方式变化。不过，这些资料里没有列出电池容量或百公里电耗，因此不能由续航更长直接推断更省电。\n\n一般来说，续航更长可能来自更大的电池容量，也可能来自更优的风阻与效率；是否更省电要看单位电量的实际消耗，比如每百公里耗电多少，所以续航长与更省电不能直接划等号。",
+      "memory_summary": null,
+      "recent_turns": [
+        {
+          "question": "长续航后驱续航更长，是不是一定更省电？",
+          "answer": "官网资料给出的续航是：使用 18 英寸轮毂时，后轮驱动版 634 公里、长续航后轮驱动版 830 公里（19 英寸轮毂为 800 公里），均为 CLTC 预估值；实际续航会随车速、天气、温度控制、路况和驾驶方式变化。不过，这些资料里没有列出电池容量或百公里电耗，因此不能由续航更长直接推断更省电。\n\n一般来说，续航更长可能来自更大的电池容量，也可能来自更优的风阻与效率；是否更省电要看单位电量的实际消耗，比如每百公里耗电多少，所以续航长与更省电不能直接划等号。",
+          "cited_chunk_ids": [
+            "tesla_model3_rwd_cn_configuration_current:续航差异",
+            "tesla_model3_rwd_cn_configuration_current:不同配置的主要差异"
+          ],
+          "boundary_result": "unconfirmed",
+          "answer_source": "mixed"
+        }
+      ]
+    },
+    "response": {
+      "answerSource": "mixed",
+      "answerId": "dfaafc17-2d26-42cc-8a15-ff04743a19d4",
+      "conversationId": "18b0ec50-eedf-4eb0-ba29-1618e7935997",
+      "answer": "不能这么理解。官网资料里，170 千瓦和 250 千瓦指的是车辆能够接受的最高充电功率，也就是峰值功率。后轮驱动版和长续航后轮驱动版的最高充电功率为 170 千瓦；长续航全轮驱动版和 Performance 高性能全轮驱动版为 250 千瓦。官网还说明，这只是车辆可接受的峰值功率，不代表每次充电都能持续达到这个数值。\n\n一般来说，实际充电功率会随电量水平、电池温度、充电桩能力等因素动态变化；因此，250 千瓦只说明峰值上限更高，不能据此推断它在整个充电过程、任何电量区间或任何充电桩上都比 170 千瓦的车快。要比较实际快慢，需要看相同条件下的充电曲线和总充电时间；这些内容当前资料未列明。",
+      "boundaryResult": "unconfirmed",
+      "citations": [
+        {
+          "id": "tesla_model3_rwd_cn_configuration_current",
+          "title": "Tesla 中国 Model 3 产品页",
+          "section": "充电功率差异",
+          "url": "https://www.tesla.cn/model3",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "id": "tesla_model3_rwd_cn_configuration_current",
+          "title": "Tesla 中国 Model 3 产品页",
+          "section": "不同配置的主要差异",
+          "url": "https://www.tesla.cn/model3",
+          "retrievedAt": "2026-10-11"
+        }
+      ],
+      "speechText": "不能这么理解。官网资料里，170 千瓦和 250 千瓦指的是车辆能够接受的最高充电功率，也就是峰值功率。后轮驱动版和长续航后轮驱动版的最高充电功率为 170 千瓦；长续航全轮驱动版和 Performance 高性能全轮驱动版为 250 千瓦。官网还说明，这只是车辆可接受的峰值功率，不代表每次充电都能持续达到这个数值。\n\n一般来说，实际充电功率会随电量水平、电池温度、充电桩能力等因素动态变化；因此，250 千瓦只说明峰值上限更高，不能据此推断它在整个充电过程、任何电量区间或任何充电桩上都比 170 千瓦的车快。要比较实际快慢，需要看相同条件下的充电曲线和总充电时间；这些内容当前资料未列明。",
+      "fallbackReason": null,
+      "clarificationOptions": []
+    },
+    "audit": {
+      "run_id": "ebee1384-0603-4b3c-8447-a9fa1c3a0503",
+      "vehicle_id": "model3-rwd-cn-current",
+      "conversation_id": "18b0ec50-eedf-4eb0-ba29-1618e7935997",
+      "model_turns": 3,
+      "retrieval_calls": 2,
+      "repair_attempts": 0,
+      "stop_reason": "completed",
+      "duration_ms": 5937,
+      "tool_calls": [
+        {
+          "tool": "search_vehicle_book",
+          "query": "超级充电 充电功率 峰值 充电曲线 充电时间",
+          "duration_ms": 94,
+          "result_chunk_ids": [
+            "tesla_model3_rwd_cn_configuration_current:充电功率差异",
+            "tesla_model3_rwd_cn_configuration_current:不同配置的主要差异",
+            "tesla_model3_rwd_cn_manual_coverage_2024plus:导航和娱乐",
+            "tesla_model3_rwd_cn_manual_coverage_2024plus:定时充电-出发时间和续航建议"
+          ],
+          "error": null
+        },
+        {
+          "tool": "search_vehicle_book",
+          "query": "250千瓦 170千瓦 充电功率 充电速度 峰值功率",
+          "duration_ms": 94,
+          "result_chunk_ids": [
+            "tesla_model3_rwd_cn_configuration_current:充电功率差异",
+            "tesla_model3_rwd_cn_configuration_current:不同配置的主要差异",
+            "tesla_model3_rwd_cn_usb_recording_2024plus:哨兵模式和行车记录仪-usb-设备要求",
+            "tesla_model3_rwd_cn_charging_interfaces_2024plus:充电口数量与交流直流接口"
+          ],
+          "error": null
+        }
+      ],
+      "evidence_count": 6,
+      "model_reported_insufficient": false,
+      "answer_source": "mixed",
+      "validation_errors": [],
+      "review_attempts": 1,
+      "reviewed_segments": [
+        {
+          "cited_chunk_ids": [
+            "tesla_model3_rwd_cn_configuration_current:充电功率差异",
+            "tesla_model3_rwd_cn_configuration_current:不同配置的主要差异"
+          ]
+        }
+      ],
+      "recorded_at": "2026-10-17T17:00:04.147866+00:00"
+    },
+    "quality_review": "pending"
+  },
+  {
+    "case": "X4",
+    "group": "regression",
+    "turn": 1,
+    "question": "长续航全驱的音响呢？",
+    "criterion": "15扬声器；不从泛化温度分区推断具体配置",
+    "seconds": 4.37,
+    "status": 200,
+    "context_before": null,
+    "response": {
+      "answerSource": "official",
+      "answerId": "0da03f5d-e899-499e-9cca-770d53945314",
+      "conversationId": "0f51e940-0bd5-4a28-853c-2cc5d2e9ce7e",
+      "answer": "长续航全轮驱动版的音响配置为 15 个扬声器、2 个低音炮和 2 个功放；官网脚注说明后轮驱动版与长续航后轮驱动版配有 9 个扬声器。",
+      "boundaryResult": "supported",
+      "citations": [
+        {
+          "id": "tesla_model3_rwd_cn_configuration_current",
+          "title": "Tesla 中国 Model 3 产品页",
+          "section": "音响和性能装备差异",
+          "url": "https://www.tesla.cn/model3",
+          "retrievedAt": "2026-10-11"
+        }
+      ],
+      "speechText": "长续航全轮驱动版的音响配置为 15 个扬声器、2 个低音炮和 2 个功放；官网脚注说明后轮驱动版与长续航后轮驱动版配有 9 个扬声器。",
+      "fallbackReason": null,
+      "clarificationOptions": []
+    },
+    "audit": {
+      "run_id": "fc9e3688-92aa-4aa4-a2fb-c88402d1ea2a",
+      "vehicle_id": "model3-rwd-cn-current",
+      "conversation_id": "0f51e940-0bd5-4a28-853c-2cc5d2e9ce7e",
+      "model_turns": 3,
+      "retrieval_calls": 1,
+      "repair_attempts": 0,
+      "stop_reason": "completed",
+      "duration_ms": 4343,
+      "tool_calls": [
+        {
+          "tool": "search_vehicle_book",
+          "query": "Model 3 长续航全驱 音响系统 扬声器 配置",
+          "duration_ms": 47,
+          "result_chunk_ids": [
+            "tesla_model3_rwd_cn_configuration_current:音响和性能装备差异",
+            "tesla_model3_rwd_cn_configuration_current:续航差异",
+            "tesla_model3_rwd_cn_configuration_current:不同配置的主要差异",
+            "tesla_model3_rwd_cn_configuration_current:加速情况"
+          ],
+          "error": null
+        }
+      ],
+      "evidence_count": 4,
+      "model_reported_insufficient": false,
+      "answer_source": "official",
+      "validation_errors": [],
+      "review_attempts": 1,
+      "reviewed_segments": [
+        {
+          "cited_chunk_ids": [
+            "tesla_model3_rwd_cn_configuration_current:音响和性能装备差异"
+          ]
+        }
+      ],
+      "recorded_at": "2026-10-17T17:00:08.524948+00:00"
+    },
+    "quality_review": "pending"
+  },
+  {
+    "case": "X4",
+    "group": "regression",
+    "turn": 2,
+    "question": "它有几个扬声器？",
+    "criterion": "15扬声器；不从泛化温度分区推断具体配置",
+    "seconds": 3.96,
+    "status": 200,
+    "context_before": {
+      "referenced_trim": "长续航全轮驱动版",
+      "context_relation": "follow_up",
+      "explicit_current_feature": null,
+      "current_question": "它有几个扬声器？",
+      "clarification_reply": null,
+      "vehicle_id": "model3-rwd-cn-current",
+      "current_topic": "续航",
+      "current_feature": "续航",
+      "confirmed_entities": {
+        "vehicle_id": "model3-rwd-cn-current",
+        "discussed_trim": "长续航全轮驱动版",
+        "feature": "续航"
+      },
+      "unresolved_question": null,
+      "pending_clarification": null,
+      "clarification_options": [],
+      "follow_up_focus": "它有几个扬声器？",
+      "standalone_query": "续航有几个扬声器？",
+      "previous_answer": "长续航全轮驱动版的音响配置为 15 个扬声器、2 个低音炮和 2 个功放；官网脚注说明后轮驱动版与长续航后轮驱动版配有 9 个扬声器。",
+      "memory_summary": null,
+      "recent_turns": [
+        {
+          "question": "长续航全驱的音响呢？",
+          "answer": "长续航全轮驱动版的音响配置为 15 个扬声器、2 个低音炮和 2 个功放；官网脚注说明后轮驱动版与长续航后轮驱动版配有 9 个扬声器。",
+          "cited_chunk_ids": [
+            "tesla_model3_rwd_cn_configuration_current:音响和性能装备差异"
+          ],
+          "boundary_result": "supported",
+          "answer_source": "official"
+        }
+      ]
+    },
+    "response": {
+      "answerSource": "official",
+      "answerId": "5da6e2f5-c6da-40e0-bf48-d6ac632848fd",
+      "conversationId": "0f51e940-0bd5-4a28-853c-2cc5d2e9ce7e",
+      "answer": "长续航全轮驱动版配有 15 个扬声器、2 个低音炮和 2 个功放。",
+      "boundaryResult": "supported",
+      "citations": [
+        {
+          "id": "tesla_model3_rwd_cn_configuration_current",
+          "title": "Tesla 中国 Model 3 产品页",
+          "section": "音响和性能装备差异",
+          "url": "https://www.tesla.cn/model3",
+          "retrievedAt": "2026-10-11"
+        }
+      ],
+      "speechText": "长续航全轮驱动版配有 15 个扬声器、2 个低音炮和 2 个功放。",
+      "fallbackReason": null,
+      "clarificationOptions": []
+    },
+    "audit": {
+      "run_id": "bd9286a1-928a-4b35-9646-794e13b13898",
+      "vehicle_id": "model3-rwd-cn-current",
+      "conversation_id": "0f51e940-0bd5-4a28-853c-2cc5d2e9ce7e",
+      "model_turns": 3,
+      "retrieval_calls": 1,
+      "repair_attempts": 0,
+      "stop_reason": "completed",
+      "duration_ms": 3937,
+      "tool_calls": [
+        {
+          "tool": "search_vehicle_book",
+          "query": "Model 3 长续航全轮驱动版 扬声器数量 音响配置",
+          "duration_ms": 63,
+          "result_chunk_ids": [
+            "tesla_model3_rwd_cn_configuration_current:音响和性能装备差异",
+            "tesla_model3_rwd_cn_configuration_current:续航差异",
+            "tesla_model3_rwd_cn_configuration_current:不同配置的主要差异",
+            "tesla_model3_rwd_cn_configuration_current:加速情况"
+          ],
+          "error": null
+        }
+      ],
+      "evidence_count": 4,
+      "model_reported_insufficient": false,
+      "answer_source": "official",
+      "validation_errors": [],
+      "review_attempts": 1,
+      "reviewed_segments": [
+        {
+          "cited_chunk_ids": [
+            "tesla_model3_rwd_cn_configuration_current:音响和性能装备差异"
+          ]
+        }
+      ],
+      "recorded_at": "2026-10-17T17:00:12.485269+00:00"
+    },
+    "quality_review": "pending"
+  },
+  {
+    "case": "X4",
+    "group": "regression",
+    "turn": 3,
+    "question": "换个话题，空调支持前后排和左右分别独立调温吗？",
+    "criterion": "15扬声器；不从泛化温度分区推断具体配置",
+    "seconds": 7.12,
+    "status": 200,
+    "context_before": {
+      "referenced_trim": null,
+      "context_relation": "new_or_unclear",
+      "explicit_current_feature": "空调",
+      "current_question": "换个话题，空调支持前后排和左右分别独立调温吗？",
+      "clarification_reply": null,
+      "vehicle_id": "model3-rwd-cn-current",
+      "current_topic": "续航",
+      "current_feature": "续航",
+      "confirmed_entities": {
+        "vehicle_id": "model3-rwd-cn-current",
+        "discussed_trim": "长续航全轮驱动版",
+        "feature": "续航"
+      },
+      "unresolved_question": null,
+      "pending_clarification": null,
+      "clarification_options": [],
+      "follow_up_focus": null,
+      "standalone_query": null,
+      "previous_answer": "长续航全轮驱动版配有 15 个扬声器、2 个低音炮和 2 个功放。",
+      "memory_summary": null,
+      "recent_turns": [
+        {
+          "question": "长续航全驱的音响呢？",
+          "answer": "长续航全轮驱动版的音响配置为 15 个扬声器、2 个低音炮和 2 个功放；官网脚注说明后轮驱动版与长续航后轮驱动版配有 9 个扬声器。",
+          "cited_chunk_ids": [
+            "tesla_model3_rwd_cn_configuration_current:音响和性能装备差异"
+          ],
+          "boundary_result": "supported",
+          "answer_source": "official"
+        },
+        {
+          "question": "它有几个扬声器？",
+          "answer": "长续航全轮驱动版配有 15 个扬声器、2 个低音炮和 2 个功放。",
+          "cited_chunk_ids": [
+            "tesla_model3_rwd_cn_configuration_current:音响和性能装备差异"
+          ],
+          "boundary_result": "supported",
+          "answer_source": "official"
+        }
+      ]
+    },
+    "response": {
+      "answerSource": "mixed",
+      "answerId": "7075fb93-b30d-4908-904a-67f376c8209e",
+      "conversationId": "0f51e940-0bd5-4a28-853c-2cc5d2e9ce7e",
+      "answer": "点击触摸屏底部的温度可进入温度控制。自动模式会根据设定温度调节加热、空调、气流和风扇；还可使用温度分区、座椅加热或制冷（如果配备）、前后挡风玻璃除霜以及通风口调节。\n\n一般来说，“温度分区”常见的是前排左右双区设定，但后排能否单独设定要看具体年款和配置；需以车辆实际温度控制界面或官方配置说明为准。",
+      "boundaryResult": "unconfirmed",
+      "citations": [
+        {
+          "id": "tesla_model3_rwd_cn_manual_coverage_2024plus",
+          "title": "Tesla 中国 Model 3 车主手册",
+          "section": "温度控制",
+          "url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/Owners_Manual.pdf",
+          "retrievedAt": "2026-10-11"
+        }
+      ],
+      "speechText": "点击触摸屏底部的温度可进入温度控制。自动模式会根据设定温度调节加热、空调、气流和风扇；还可使用温度分区、座椅加热或制冷（如果配备）、前后挡风玻璃除霜以及通风口调节。\n\n一般来说，“温度分区”常见的是前排左右双区设定，但后排能否单独设定要看具体年款和配置；需以车辆实际温度控制界面或官方配置说明为准。",
+      "fallbackReason": null,
+      "clarificationOptions": []
+    },
+    "audit": {
+      "run_id": "33077b90-a484-462f-a164-126615a5fe58",
+      "vehicle_id": "model3-rwd-cn-current",
+      "conversation_id": "0f51e940-0bd5-4a28-853c-2cc5d2e9ce7e",
+      "model_turns": 4,
+      "retrieval_calls": 2,
+      "repair_attempts": 0,
+      "stop_reason": "completed",
+      "duration_ms": 7093,
+      "tool_calls": [
+        {
+          "tool": "search_vehicle_book",
+          "query": "Model 3 空调 温度分区 前排左右独立调节温度 后排空调出风口",
+          "duration_ms": 47,
+          "result_chunk_ids": [
+            "tesla_model3_rwd_cn_manual_coverage_2024plus:温度控制",
+            "tesla_model3_rwd_cn_manual_coverage_2024plus:储物区域",
+            "tesla_model3_rwd_cn_configuration_current:不同配置的主要差异",
+            "tesla_model3_rwd_cn_configuration_current:音响和性能装备差异"
+          ],
+          "error": null
+        },
+        {
+          "tool": "search_vehicle_book",
+          "query": "温度控制 温度分区 调节方式 双区空调 前后排温度分别设置",
+          "duration_ms": 31,
+          "result_chunk_ids": [
+            "tesla_model3_rwd_cn_manual_coverage_2024plus:温度控制",
+            "tesla_model3_rwd_cn_configuration_current:续航差异",
+            "tesla_model3_rwd_cn_manual_coverage_2024plus:定时充电-出发时间和续航建议",
+            "tesla_model3_rwd_cn_manual_coverage_2024plus:充电和能耗"
+          ],
+          "error": null
+        }
+      ],
+      "evidence_count": 7,
+      "model_reported_insufficient": false,
+      "answer_source": "mixed",
+      "validation_errors": [],
+      "review_attempts": 1,
+      "reviewed_segments": [
+        {
+          "cited_chunk_ids": [
+            "tesla_model3_rwd_cn_manual_coverage_2024plus:温度控制"
+          ]
+        }
+      ],
+      "recorded_at": "2026-10-17T17:00:19.600155+00:00"
+    },
+    "quality_review": "pending"
+  },
+  {
+    "case": "X5",
+    "group": "regression",
+    "turn": 1,
+    "question": "主动巡航控制有什么作用？",
+    "criterion": "不因格式错误拒答，引用章节与回答一致",
+    "seconds": 4.64,
+    "status": 200,
+    "context_before": null,
+    "response": {
+      "answerSource": "official",
+      "answerId": "37cbd095-5991-4e28-8eb7-2fdca1d5ea79",
+      "conversationId": "e8ed9f6d-b4d7-4058-8d17-70668d06e8f0",
+      "answer": "主动巡航控制可保持设定车速，并与前方车辆保持可调节的跟车距离。\n\nTesla 中国车主手册将这些能力称为“辅助驾驶”，并明确说明它们不能让 Model 3 实现自动驾驶，也不能取代驾驶员。驾驶员始终需要关注路况、掌控车辆，并随时准备立即干预。",
+      "boundaryResult": null,
+      "citations": [
+        {
+          "id": "tesla_model3_rwd_cn_assistance_2024plus",
+          "title": "Tesla 中国 Model 3 车主手册",
+          "section": "有哪些辅助驾驶功能",
+          "url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/GUID-101D1BF5-52D2-469A-A57D-E7230BBEE94B.html",
+          "retrievedAt": "2026-10-11"
+        }
+      ],
+      "speechText": "主动巡航控制可保持设定车速，并与前方车辆保持可调节的跟车距离。\n\nTesla 中国车主手册将这些能力称为“辅助驾驶”，并明确说明它们不能让 Model 3 实现自动驾驶，也不能取代驾驶员。驾驶员始终需要关注路况、掌控车辆，并随时准备立即干预。",
+      "fallbackReason": null,
+      "clarificationOptions": []
+    },
+    "audit": {
+      "run_id": "d38080fe-795c-4309-b2f7-4a8963de5451",
+      "vehicle_id": "model3-rwd-cn-current",
+      "conversation_id": "e8ed9f6d-b4d7-4058-8d17-70668d06e8f0",
+      "model_turns": 3,
+      "retrieval_calls": 1,
+      "repair_attempts": 0,
+      "stop_reason": "completed",
+      "duration_ms": 4593,
+      "tool_calls": [
+        {
+          "tool": "search_vehicle_book",
+          "query": "主动巡航控制 作用 功能",
+          "duration_ms": 32,
+          "result_chunk_ids": [
+            "tesla_model3_rwd_cn_assistance_2024plus:有哪些辅助驾驶功能",
+            "tesla_model3_rwd_cn_manual_coverage_2024plus:主动安全功能",
+            "tesla_model3_rwd_cn_manual_coverage_2024plus:驾驶和驻车",
+            "tesla_model3_rwd_cn_manual_coverage_2024plus:导航和娱乐"
+          ],
+          "error": null
+        }
+      ],
+      "evidence_count": 4,
+      "model_reported_insufficient": false,
+      "answer_source": "official",
+      "validation_errors": [],
+      "review_attempts": 1,
+      "reviewed_segments": [
+        {
+          "cited_chunk_ids": [
+            "tesla_model3_rwd_cn_assistance_2024plus:有哪些辅助驾驶功能"
+          ]
+        },
+        {
+          "cited_chunk_ids": [
+            "tesla_model3_rwd_cn_assistance_2024plus:有哪些辅助驾驶功能"
+          ]
+        }
+      ],
+      "recorded_at": "2026-10-17T17:00:24.224482+00:00"
+    },
+    "quality_review": "pending"
+  },
+  {
+    "case": "X5",
+    "group": "regression",
+    "turn": 2,
+    "question": "给我刚才的手册出处。",
+    "criterion": "不因格式错误拒答，引用章节与回答一致",
+    "seconds": 4.87,
+    "status": 200,
+    "context_before": {
+      "referenced_trim": null,
+      "context_relation": "follow_up",
+      "explicit_current_feature": null,
+      "current_question": "给我刚才的手册出处。",
+      "clarification_reply": null,
+      "vehicle_id": "model3-rwd-cn-current",
+      "current_topic": "主动巡航",
+      "current_feature": "主动巡航",
+      "confirmed_entities": {
+        "vehicle_id": "model3-rwd-cn-current",
+        "feature": "主动巡航"
+      },
+      "unresolved_question": null,
+      "pending_clarification": null,
+      "clarification_options": [],
+      "follow_up_focus": "给我刚才的手册出处。",
+      "standalone_query": "关于主动巡航，给我刚才的手册出处。",
+      "previous_answer": "主动巡航控制可保持设定车速，并与前方车辆保持可调节的跟车距离。\n\nTesla 中国车主手册将这些能力称为“辅助驾驶”，并明确说明它们不能让 Model 3 实现自动驾驶，也不能取代驾驶员。驾驶员始终需要关注路况、掌控车辆，并随时准备立即干预。",
+      "memory_summary": null,
+      "recent_turns": [
+        {
+          "question": "主动巡航控制有什么作用？",
+          "answer": "主动巡航控制可保持设定车速，并与前方车辆保持可调节的跟车距离。\n\nTesla 中国车主手册将这些能力称为“辅助驾驶”，并明确说明它们不能让 Model 3 实现自动驾驶，也不能取代驾驶员。驾驶员始终需要关注路况、掌控车辆，并随时准备立即干预。",
+          "cited_chunk_ids": [
+            "tesla_model3_rwd_cn_assistance_2024plus:有哪些辅助驾驶功能"
+          ],
+          "boundary_result": null,
+          "answer_source": "official"
+        }
+      ]
+    },
+    "response": {
+      "answerSource": "official",
+      "answerId": "e04f48cc-61df-4a01-a773-1e6680a0e3b0",
+      "conversationId": "e8ed9f6d-b4d7-4058-8d17-70668d06e8f0",
+      "answer": "上一条回答出自《Tesla 中国 Model 3 车主手册》（2024+ 版本）。对应页面标题为“Tesla 中国 Model 3 车主手册”，source_url 是 https://www.tesla.cn/ownersmanual/model3/zh_cn/GUID-101D1BF5-52D2-469A-A57D-E7230BBEE94B.html。该资料本地整理的小节标题为“有哪些辅助驾驶功能”。",
+      "boundaryResult": null,
+      "citations": [
+        {
+          "id": "tesla_model3_rwd_cn_assistance_2024plus",
+          "title": "Tesla 中国 Model 3 车主手册",
+          "section": "有哪些辅助驾驶功能",
+          "url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/GUID-101D1BF5-52D2-469A-A57D-E7230BBEE94B.html",
+          "retrievedAt": "2026-10-11"
+        }
+      ],
+      "speechText": "上一条回答出自《Tesla 中国 Model 3 车主手册》（2024+ 版本）。对应页面标题为“Tesla 中国 Model 3 车主手册”，source_url 是 https://www.tesla.cn/ownersmanual/model3/zh_cn/GUID-101D1BF5-52D2-469A-A57D-E7230BBEE94B.html。该资料本地整理的小节标题为“有哪些辅助驾驶功能”。",
+      "fallbackReason": null,
+      "clarificationOptions": []
+    },
+    "audit": {
+      "run_id": "2b6c4e61-1f88-4c3a-9365-59712a7bb892",
+      "vehicle_id": "model3-rwd-cn-current",
+      "conversation_id": "e8ed9f6d-b4d7-4058-8d17-70668d06e8f0",
+      "model_turns": 3,
+      "retrieval_calls": 1,
+      "repair_attempts": 0,
+      "stop_reason": "completed",
+      "duration_ms": 4844,
+      "tool_calls": [
+        {
+          "tool": "search_vehicle_book",
+          "query": "主动巡航控制 辅助驾驶功能 说明",
+          "duration_ms": 46,
+          "result_chunk_ids": [
+            "tesla_model3_rwd_cn_assistance_2024plus:有哪些辅助驾驶功能",
+            "tesla_model3_rwd_cn_assistance_2024plus:lcc-与辅助转向",
+            "tesla_model3_rwd_cn_manual_coverage_2024plus:主动安全功能",
+            "tesla_model3_rwd_cn_manual_coverage_2024plus:驾驶和驻车"
+          ],
+          "error": null
+        }
+      ],
+      "evidence_count": 4,
+      "model_reported_insufficient": false,
+      "answer_source": "official",
+      "validation_errors": [],
+      "review_attempts": 1,
+      "reviewed_segments": [
+        {
+          "cited_chunk_ids": [
+            "tesla_model3_rwd_cn_assistance_2024plus:有哪些辅助驾驶功能"
+          ]
+        }
+      ],
+      "recorded_at": "2026-10-17T17:00:29.122206+00:00"
+    },
+    "quality_review": "pending"
+  }
+]

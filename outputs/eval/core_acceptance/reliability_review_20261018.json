@@ -1,0 +1,656 @@
+{
+  "title": "车书 Agent 错误拒答、引用一致性与配置推断验收",
+  "date": "2026-10-18",
+  "model": "deepseek-flash",
+  "retrieval": "hybrid",
+  "acceptance_interpretation": "允许不改变功能含义的自然解释，例如巡航主要减轻长途驾驶负担。不要求逐字复述；不能据此放宽配置数值、具体功能承诺和安全操作。",
+  "implementation": [
+    "统一生成、修正、复核输出契约，兼容完整JSON代码围栏；一次受控修正",
+    "所有带引用答案由同一DeepSeek执行无工具证据复核，分段关联证据；mixed兼容旧API",
+    "主循环4轮，复核和修正共享总计6轮/3检索/15秒预算",
+    "增强配置比较约束；正常停止充电不召回应急释放块",
+    "新增官方停止充电、正常拔枪、异常释放资料，并重建索引"
+  ],
+  "automated": {
+    "backend_passed": 262,
+    "frontend_passed": 21,
+    "frontend_build": "passed",
+    "retrieval_cases": 38,
+    "recall_at_3": 1,
+    "hit_at_1": 0.9393939393939394,
+    "mrr": 0.9696969696969697,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "report": "retrieval_review_final_20261018.json"
+  },
+  "reproducibility": {
+    "revision": "34ceb1bd14cec7a54b3407172f33cf6fdd85cf77",
+    "working_tree": "dirty; existing user changes preserved; not committed or pushed",
+    "same_runtime_and_knowledge_hashes_across_three_runs": true,
+    "manifest_locations": [
+      "20261018_005916/manifest.json",
+      "20261018_005931/manifest.json",
+      "20261018_005941/manifest.json",
+      "20261018_005906/manifest.json"
+    ],
+    "evidence_locations": [
+      "20261018_005916/evidence_snapshot.json",
+      "20261018_005931/evidence_snapshot.json",
+      "20261018_005941/evidence_snapshot.json",
+      "20261018_005906/evidence_snapshot.json"
+    ],
+    "note": "每轮原始results.json及agent.jsonl保持不变，quality_review pending由本文件的独立人工审阅结果补充；HTTP成功不等于业务通过。"
+  },
+  "runs": [
+    {
+      "run": "20261018_005916",
+      "turns": 50,
+      "cases": 28,
+      "http_success": 50,
+      "max_seconds": 7.91,
+      "p95_seconds": 7.68,
+      "max_model_turns": 4,
+      "max_retrieval_calls": 2,
+      "repair_attempts": 3,
+      "cited_answers": 41,
+      "violations": [],
+      "budget_violations": [],
+      "fallbacks": [
+        {
+          "case": "M4",
+          "turn": 2,
+          "reason": "clarification_required"
+        }
+      ],
+      "manual_case_results": [
+        {
+          "case": "F1",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "F2",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "F3",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "F4",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "F5",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "R1",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "R2",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "R3",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "R4",
+          "result": "pass",
+          "note": "允许不改变功能含义的用途级合理解释，包括减轻长途驾驶负担。"
+        },
+        {
+          "case": "C1",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "C2",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "C3",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "C4",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "B1",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "B2",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "B3",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "B4",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "B5",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "M1",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "M2",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "M3",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "M4",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "M5",
+          "result": "fail",
+          "note": "首轮正确给出18英寸634/830公里，但误称19英寸长续航后驱对应值未标明；资料的分别关系可确定800公里。后续追问和换题通过。"
+        },
+        {
+          "case": "M6",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "P1",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "P2",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "P3",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "P4",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        }
+      ]
+    },
+    {
+      "run": "20261018_005931",
+      "turns": 50,
+      "cases": 28,
+      "http_success": 50,
+      "max_seconds": 9.39,
+      "p95_seconds": 7.77,
+      "max_model_turns": 5,
+      "max_retrieval_calls": 3,
+      "repair_attempts": 2,
+      "cited_answers": 41,
+      "violations": [],
+      "budget_violations": [],
+      "fallbacks": [
+        {
+          "case": "M4",
+          "turn": 2,
+          "reason": "clarification_required"
+        }
+      ],
+      "manual_case_results": [
+        {
+          "case": "F1",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "F2",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "F3",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "F4",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "F5",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "R1",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "R2",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "R3",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "R4",
+          "result": "pass",
+          "note": "允许不改变功能含义的用途级合理解释，包括减轻长途驾驶负担。"
+        },
+        {
+          "case": "C1",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "C2",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "C3",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "C4",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "B1",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "B2",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "B3",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "B4",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "B5",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "M1",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "M2",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "M3",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "M4",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "M5",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "M6",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "P1",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "P2",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "P3",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "P4",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        }
+      ]
+    },
+    {
+      "run": "20261018_005941",
+      "turns": 50,
+      "cases": 28,
+      "http_success": 50,
+      "max_seconds": 10.42,
+      "p95_seconds": 8.33,
+      "max_model_turns": 5,
+      "max_retrieval_calls": 3,
+      "repair_attempts": 2,
+      "cited_answers": 41,
+      "violations": [],
+      "budget_violations": [],
+      "fallbacks": [
+        {
+          "case": "M4",
+          "turn": 2,
+          "reason": "clarification_required"
+        }
+      ],
+      "manual_case_results": [
+        {
+          "case": "F1",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "F2",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "F3",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "F4",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "F5",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "R1",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "R2",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "R3",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "R4",
+          "result": "pass",
+          "note": "允许不改变功能含义的用途级合理解释，包括减轻长途驾驶负担。"
+        },
+        {
+          "case": "C1",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "C2",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "C3",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "C4",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "B1",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "B2",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "B3",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "B4",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "B5",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "M1",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "M2",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "M3",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "M4",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "M5",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "M6",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "P1",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "P2",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "P3",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "P4",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        }
+      ]
+    },
+    {
+      "run": "20261018_005906",
+      "turns": 11,
+      "cases": 5,
+      "http_success": 11,
+      "max_seconds": 7.12,
+      "p95_seconds": 7.12,
+      "max_model_turns": 4,
+      "max_retrieval_calls": 2,
+      "repair_attempts": 0,
+      "cited_answers": 11,
+      "violations": [],
+      "budget_violations": [],
+      "fallbacks": [],
+      "manual_case_results": [
+        {
+          "case": "X1",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "X2",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "X3",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "X4",
+          "result": "pass",
+          "note": "逐项审阅回答及引用，按本轮验收口径通过。"
+        },
+        {
+          "case": "X5",
+          "result": "pass",
+          "note": "允许不改变功能含义的用途级合理解释，包括减轻长途驾驶负担。"
+        }
+      ]
+    }
+  ],
+  "scorecard": [
+    {
+      "run": "20261018_005916",
+      "core": "23/24",
+      "multi_turn": "5/6",
+      "topic_tracking": "6/6",
+      "basic": "4/4"
+    },
+    {
+      "run": "20261018_005931",
+      "core": "24/24",
+      "multi_turn": "6/6",
+      "basic": "4/4"
+    },
+    {
+      "run": "20261018_005941",
+      "core": "24/24",
+      "multi_turn": "6/6",
+      "basic": "4/4"
+    }
+  ],
+  "directed_regressions": {
+    "run": "20261018_005906",
+    "cases": "5/5",
+    "turns": "11/11",
+    "coverage": [
+      "正常停止和拔枪",
+      "异常释放前提与安全警告",
+      "续航/效率及峰值/全程速度不能等同",
+      "音响追问和空调分区不过度推断",
+      "巡航解释与引用来源"
+    ]
+  },
+  "remaining_issues": [
+    {
+      "severity": "release_gate_failure",
+      "run": "20261018_005916",
+      "case": "M5",
+      "turn": 1,
+      "description": "模型复核后仍误读19英寸轮毂续航对应关系。长续航后驱800公里可以从前文顺序与分别关系确定，回答却称未标明。主问题18英寸数值正确，但附加结论不正确。",
+      "next_step": "将配置资料中并列数值整理为逐配置显式对应，并补充同类阅读回归；修改后重新跑完整三轮，不能用当前后两次通过代替。"
+    }
+  ],
+  "non_blocking_warnings": [
+    "部分引用追问仍重复先前正文或输出source_url/section技术字段，表达可进一步简化。",
+    "个别回答将当前检索片段未列明表述为官方产品页未列明，应进一步收窄为当前资料未列明。",
+    "第二轮M3数量追问额外给USB分支，主要答案正确但不够精炼。"
+  ],
+  "release_gate": {
+    "numeric_thresholds": "passed in all three runs",
+    "unknown_or_foreign_citations": 0,
+    "budget_violations": 0,
+    "unexpected_refusals": 0,
+    "observed_dangerous_charging_advice": 0,
+    "all_manual_official_claims_supported": false,
+    "status": "NOT_FULLY_PASSED",
+    "reason": "第一轮M5仍有一条配置依据误读，未达到本轮人工审查无此类问题的严格门槛；不宣称消除幻觉。"
+  },
+  "official_source": {
+    "url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/GUID-BEE08D47-0CE0-4BDD-83F2-9854FB3D578F.html",
+    "verified_at": "2026-10-18"
+  },
+  "preserved_development_runs": {
+    "targeted": [
+      "20261018_005023",
+      "20261018_005204",
+      "20261018_005324",
+      "20261018_005546"
+    ],
+    "aborted_full_runs": [
+      "20261018_005334",
+      "20261018_005407",
+      "20261018_005417",
+      "20261018_005556",
+      "20261018_005607",
+      "20261018_005622"
+    ],
+    "note": "修复过程中的失败/中断记录保留；中断运行不计入最终三次完整验收。"
+  }
+}

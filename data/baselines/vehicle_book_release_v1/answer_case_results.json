@@ -1,0 +1,1142 @@
+[
+  {
+    "case_id": "x1_v1_lcc_speed_answer_001",
+    "vehicle_id": "alpha_aster_x1_max_v1",
+    "question": "ASTER_X1 V1 在 30 km/h 时可以开启 LCC 吗？",
+    "category": "version_difference",
+    "critical": true,
+    "expected_fallback": false,
+    "answer": "不可以。ASTER_X1 V1 的 LCC 仅在车速处于 60 km/h 至 120 km/h 之间（含边界）时可激活，此外还要求左右车道线有效且检测到驾驶员双手在方向盘上。30 km/h 低于该最低车速 60 km/h，因此不满足 LCC 激活条件。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v1_adas:lane-centering-control"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v1_adas:lane-centering-control"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x1_v1_adas:lane-centering-control"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x1_max_v1"
+    ],
+    "citation_document_versions": [
+      "1.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x1_v1_lcc_lane_markings_answer_001",
+    "vehicle_id": "alpha_aster_x1_max_v1",
+    "question": "ASTER_X1 V1 开启 LCC 对左右车道线有什么要求？",
+    "category": "feature_explanation",
+    "critical": false,
+    "expected_fallback": false,
+    "answer": "开启 LCC 要求左右车道线均有效（left and right lane markings are valid）——即左右两侧车道线都必须有效，LCC 才能激活。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v1_adas:lane-centering-control"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v1_adas:lane-centering-control"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x1_v1_adas:lane-centering-control"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x1_max_v1"
+    ],
+    "citation_document_versions": [
+      "1.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x1_v1_hpa_unsupported_answer_001",
+    "vehicle_id": "alpha_aster_x1_max_v1",
+    "question": "ASTER_X1 V1 支持 HPA 记忆泊车吗？",
+    "category": "version_difference",
+    "critical": true,
+    "expected_fallback": false,
+    "answer": "不支持。ASTER X1 软件版本 1.0 不提供 HPA，且设置中不含 HPA 或记忆路线入口。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v1_adas:hpa"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v1_adas:hpa"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x1_v1_adas:hpa"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x1_max_v1"
+    ],
+    "citation_document_versions": [
+      "1.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x1_v1_acc_speed_answer_001",
+    "vehicle_id": "alpha_aster_x1_max_v1",
+    "question": "ASTER_X1 V1 的 ACC 可设定车速范围是多少？",
+    "category": "configuration",
+    "critical": false,
+    "expected_fallback": false,
+    "answer": "ASTER_X1 v1 的 ACC 可设定车速范围为 30–150 km/h。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v1_adas:acc"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v1_adas:acc"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x1_v1_adas:acc"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x1_max_v1"
+    ],
+    "citation_document_versions": [
+      "1.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x1_v1_aeb_speed_answer_001",
+    "vehicle_id": "alpha_aster_x1_max_v1",
+    "question": "ASTER_X1 V1 的 AEB 对车辆和行人的工作速度范围分别是多少？",
+    "category": "configuration",
+    "critical": false,
+    "expected_fallback": false,
+    "answer": "ASTER_X1 V1 的 AEB 对前方车辆风险的工作速度范围为 8–80 km/h，对行人风险的工作速度范围为 8–50 km/h。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v1_adas:aeb"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v1_adas:aeb"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x1_v1_adas:aeb"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x1_max_v1"
+    ],
+    "citation_document_versions": [
+      "1.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x1_v1_seat_ventilation_answer_001",
+    "vehicle_id": "alpha_aster_x1_max_v1",
+    "question": "ASTER_X1 V1 的座椅通风支持哪些座椅和档位？",
+    "category": "comfort",
+    "critical": false,
+    "expected_fallback": false,
+    "answer": "座椅通风仅在 MAX 配置提供：本 MAX 测试车型的主驾驶座椅支持 1 档和 2 档（路径为“车辆 > 舒适 > 主驾座椅通风”），副驾驶座椅不支持通风。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v1_owner_manual:seat-ventilation"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v1_owner_manual:seat-ventilation"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x1_v1_owner_manual:seat-ventilation"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x1_max_v1"
+    ],
+    "citation_document_versions": [
+      "1.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x1_v1_seat_heating_answer_001",
+    "vehicle_id": "alpha_aster_x1_max_v1",
+    "question": "ASTER_X1 V1 的座椅加热支持几个档位？",
+    "category": "comfort",
+    "critical": false,
+    "expected_fallback": false,
+    "answer": "MAX 配置的主驾驶和副驾驶座椅均支持 1、2、3 共 3 档加热。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v1_owner_manual:seat-heating"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v1_owner_manual:seat-heating"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x1_v1_owner_manual:seat-heating"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x1_max_v1"
+    ],
+    "citation_document_versions": [
+      "1.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x1_v1_battery_capacity_answer_001",
+    "vehicle_id": "alpha_aster_x1_max_v1",
+    "question": "ASTER_X1 V1 的动力电池容量是多少？",
+    "category": "charging",
+    "critical": false,
+    "expected_fallback": false,
+    "answer": "ASTER_X1 V1 配备 75 kWh 的 LFP 动力电池。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v1_owner_manual:battery-and-charging"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v1_owner_manual:battery-and-charging"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x1_v1_owner_manual:battery-and-charging"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x1_max_v1"
+    ],
+    "citation_document_versions": [
+      "1.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x1_v1_dc_charging_answer_001",
+    "vehicle_id": "alpha_aster_x1_max_v1",
+    "question": "ASTER_X1 V1 的最大直流快充功率是多少？",
+    "category": "version_difference",
+    "critical": true,
+    "expected_fallback": false,
+    "answer": "直流充电最大功率为 150 kW。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v1_owner_manual:battery-and-charging"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v1_owner_manual:battery-and-charging"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x1_v1_owner_manual:battery-and-charging"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x1_max_v1"
+    ],
+    "citation_document_versions": [
+      "1.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x1_v1_flight_mode_answer_001",
+    "vehicle_id": "alpha_aster_x1_max_v1",
+    "question": "飞行模式应该如何开启？",
+    "category": "no_answer",
+    "critical": false,
+    "expected_fallback": true,
+    "answer": "未在当前车辆资料中找到足够可靠的依据。",
+    "is_fallback": true,
+    "fallback_reason": "no_retrieval_results",
+    "required_citation_chunk_ids": [],
+    "allowed_citation_chunk_ids": [],
+    "cited_chunk_ids": [],
+    "citation_vehicle_ids": [],
+    "citation_document_versions": [],
+    "answer_correct": null,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": null,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x1_v2_lcc_speed_answer_001",
+    "vehicle_id": "alpha_aster_x1_max_v2",
+    "question": "ASTER_X1 V2 在 30 km/h 时可以开启 LCC 吗？",
+    "category": "version_difference",
+    "critical": true,
+    "expected_fallback": false,
+    "answer": "是的。ASTER_X1 V2 的 LCC 可在车速 0 km/h 至 130 km/h 之间激活，因此 30 km/h 处于该范围内，可以开启（前提是车道环境满足系统要求且驾驶员监控可用）。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v2_adas:lane-centering-control"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v2_adas:lane-centering-control"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x1_v2_adas:lane-centering-control"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x1_max_v2"
+    ],
+    "citation_document_versions": [
+      "2.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x1_v2_hpa_supported_answer_001",
+    "vehicle_id": "alpha_aster_x1_max_v2",
+    "question": "ASTER_X1 V2 支持 HPA 记忆泊车吗？",
+    "category": "version_difference",
+    "critical": true,
+    "expected_fallback": false,
+    "answer": "支持。HPA 在 ASTER X1 软件版本 2.0 上受支持。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v2_adas:hpa"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v2_adas:hpa"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x1_v2_adas:hpa"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x1_max_v2"
+    ],
+    "citation_document_versions": [
+      "2.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x1_v2_hpa_routes_answer_001",
+    "vehicle_id": "alpha_aster_x1_max_v2",
+    "question": "ASTER_X1 V2 的 HPA 最多能保存几条路线，每条最长多少米？",
+    "category": "configuration",
+    "critical": false,
+    "expected_fallback": false,
+    "answer": "ASTER_X1 V2 的 HPA 最多可保存 2 条路线，每条路线最长 100 米（每条不超过 100 m）。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v2_adas:hpa"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v2_adas:hpa"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x1_v2_adas:hpa"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x1_max_v2"
+    ],
+    "citation_document_versions": [
+      "2.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x1_v2_acc_speed_answer_001",
+    "vehicle_id": "alpha_aster_x1_max_v2",
+    "question": "ASTER_X1 V2 的 ACC 可设定车速范围是多少？",
+    "category": "configuration",
+    "critical": false,
+    "expected_fallback": false,
+    "answer": "ASTER_X1 V2 的 ACC 可设定车速范围为 20–150 km/h。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v2_adas:acc"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v2_adas:acc"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x1_v2_adas:acc"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x1_max_v2"
+    ],
+    "citation_document_versions": [
+      "2.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x1_v2_aeb_speed_answer_001",
+    "vehicle_id": "alpha_aster_x1_max_v2",
+    "question": "ASTER_X1 V2 的 AEB 对车辆和行人的工作速度范围分别是多少？",
+    "category": "configuration",
+    "critical": false,
+    "expected_fallback": false,
+    "answer": "ASTER_X1 V2 的 AEB 对车辆的工作速度范围是 5–90 km/h；对行人的工作速度范围是 5–60 km/h。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v2_adas:aeb"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v2_adas:aeb"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x1_v2_adas:aeb"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x1_max_v2"
+    ],
+    "citation_document_versions": [
+      "2.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x1_v2_auto_seat_heating_answer_001",
+    "vehicle_id": "alpha_aster_x1_max_v2",
+    "question": "ASTER_X1 V2 的自动座椅加热在什么条件下可以启用？",
+    "category": "comfort",
+    "critical": false,
+    "expected_fallback": false,
+    "answer": "ASTER_X1 V2 新增的自动座椅加热可在座舱温度低于 10°C 时启用（设置路径为“应用 > 舒适座舱 > 座椅 > 自动加热”）。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v2_owner_manual:seat-heating"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v2_owner_manual:seat-heating"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x1_v2_owner_manual:seat-heating"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x1_max_v2"
+    ],
+    "citation_document_versions": [
+      "2.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x1_v2_battery_capacity_answer_001",
+    "vehicle_id": "alpha_aster_x1_max_v2",
+    "question": "ASTER_X1 V2 的动力电池容量是多少？",
+    "category": "charging",
+    "critical": false,
+    "expected_fallback": false,
+    "answer": "ASTER_X1 V2 配备 75 kWh LFP 动力电池。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v2_owner_manual:battery-and-charging"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v2_owner_manual:battery-and-charging"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x1_v2_owner_manual:battery-and-charging"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x1_max_v2"
+    ],
+    "citation_document_versions": [
+      "2.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x1_v2_dc_charging_answer_001",
+    "vehicle_id": "alpha_aster_x1_max_v2",
+    "question": "ASTER_X1 V2 的最大直流快充功率是多少？",
+    "category": "version_difference",
+    "critical": true,
+    "expected_fallback": false,
+    "answer": "ASTER_X1 V2 的最大直流快充功率是 180 kW。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v2_owner_manual:battery-and-charging"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v2_owner_manual:battery-and-charging"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x1_v2_owner_manual:battery-and-charging"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x1_max_v2"
+    ],
+    "citation_document_versions": [
+      "2.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x1_v2_fast_charge_preheating_answer_001",
+    "vehicle_id": "alpha_aster_x1_max_v2",
+    "question": "导航到快充站后，ASTER_X1 V2 会自动进行电池预热吗？",
+    "category": "charging",
+    "critical": false,
+    "expected_fallback": false,
+    "answer": "会。导航到快充站时，ASTER_X1 V2 可自动启动电池预热。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v2_owner_manual:battery-and-charging"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x1_v2_owner_manual:battery-and-charging"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x1_v2_owner_manual:battery-and-charging"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x1_max_v2"
+    ],
+    "citation_document_versions": [
+      "2.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x1_v2_mars_answer_001",
+    "vehicle_id": "alpha_aster_x1_max_v2",
+    "question": "如何让车辆自动驾驶去火星？",
+    "category": "no_answer",
+    "critical": false,
+    "expected_fallback": true,
+    "answer": "未在当前车辆资料中找到足够可靠的依据。",
+    "is_fallback": true,
+    "fallback_reason": "no_retrieval_results",
+    "required_citation_chunk_ids": [],
+    "allowed_citation_chunk_ids": [],
+    "cited_chunk_ids": [],
+    "citation_vehicle_ids": [],
+    "citation_document_versions": [],
+    "answer_correct": null,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": null,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x2_v1_lcc_speed_answer_001",
+    "vehicle_id": "alpha_aster_x2_max_v1",
+    "question": "ASTER_X2 V1 的 LCC 工作车速范围是多少？",
+    "category": "vehicle_difference",
+    "critical": true,
+    "expected_fallback": false,
+    "answer": "ASTER_X2 V1 的 LCC（车道居中辅助）工作车速范围为 0–130 km/h。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x2_v1_adas:lcc"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x2_v1_adas:lcc"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x2_v1_adas:lcc"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x2_max_v1"
+    ],
+    "citation_document_versions": [
+      "1.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x2_v1_hpa_supported_answer_001",
+    "vehicle_id": "alpha_aster_x2_max_v1",
+    "question": "ASTER_X2 V1 支持 HPA 记忆泊车吗？",
+    "category": "vehicle_difference",
+    "critical": true,
+    "expected_fallback": false,
+    "answer": "支持。ASTER_X2 v1 标配记忆泊车辅助（HPA），可保存最多 3 条路线，每条路线最长 150 m。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x2_v1_adas:hpa"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x2_v1_adas:hpa"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x2_v1_adas:hpa"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x2_max_v1"
+    ],
+    "citation_document_versions": [
+      "1.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x2_v1_hpa_routes_answer_001",
+    "vehicle_id": "alpha_aster_x2_max_v1",
+    "question": "ASTER_X2 V1 的 HPA 最多能保存几条路线，每条最长多少米？",
+    "category": "configuration",
+    "critical": false,
+    "expected_fallback": false,
+    "answer": "ASTER_X2 V1 的 HPA 最多可保存 3 条路线，每条路线最长 150 m。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x2_v1_adas:hpa"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x2_v1_adas:hpa"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x2_v1_adas:hpa"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x2_max_v1"
+    ],
+    "citation_document_versions": [
+      "1.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x2_v1_ventilation_trims_answer_001",
+    "vehicle_id": "alpha_aster_x2_max_v1",
+    "question": "ASTER_X2 V1 的哪些配置支持座椅通风？",
+    "category": "vehicle_difference",
+    "critical": true,
+    "expected_fallback": false,
+    "answer": "ASTER_X2 V1 中，座椅通风在 PRO 和 MAX 配置提供。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:seat-ventilation"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:seat-ventilation"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:seat-ventilation"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x2_max_v1"
+    ],
+    "citation_document_versions": [
+      "1.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x2_v1_ventilation_levels_answer_001",
+    "vehicle_id": "alpha_aster_x2_max_v1",
+    "question": "ASTER_X2 V1 的座椅通风有几个档位？",
+    "category": "comfort",
+    "critical": false,
+    "expected_fallback": false,
+    "answer": "ASTER_X2 V1 的座椅通风在 PRO 和 MAX 配置提供；本 MAX 测试车型的主驾驶和副驾驶座椅均支持 1、2、3 共 3 档。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:seat-ventilation"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:seat-ventilation"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:seat-ventilation"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x2_max_v1"
+    ],
+    "citation_document_versions": [
+      "1.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x2_v1_seat_heating_answer_001",
+    "vehicle_id": "alpha_aster_x2_max_v1",
+    "question": "ASTER_X2 V1 的哪些座椅支持加热？",
+    "category": "comfort",
+    "critical": false,
+    "expected_fallback": false,
+    "answer": "ASTER_X2 v1 中，主驾驶座椅、副驾驶座椅和两个后排外侧座椅支持加热。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:seat-heating"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:seat-heating"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:seat-heating"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x2_max_v1"
+    ],
+    "citation_document_versions": [
+      "1.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x2_v1_battery_capacity_answer_001",
+    "vehicle_id": "alpha_aster_x2_max_v1",
+    "question": "ASTER_X2 V1 的动力电池容量是多少？",
+    "category": "charging",
+    "critical": false,
+    "expected_fallback": false,
+    "answer": "ASTER_X2 V1 配备 90 kWh NMC 动力电池。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:battery-and-charging"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:battery-and-charging"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:battery-and-charging"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x2_max_v1"
+    ],
+    "citation_document_versions": [
+      "1.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x2_v1_dc_charging_answer_001",
+    "vehicle_id": "alpha_aster_x2_max_v1",
+    "question": "ASTER_X2 V1 的最大直流快充功率是多少？",
+    "category": "vehicle_difference",
+    "critical": true,
+    "expected_fallback": false,
+    "answer": "ASTER_X2 V1 的最大直流快充功率为 240 kW。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:battery-and-charging"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:battery-and-charging"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:battery-and-charging"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x2_max_v1"
+    ],
+    "citation_document_versions": [
+      "1.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x2_v1_hvac_zones_answer_001",
+    "vehicle_id": "alpha_aster_x2_max_v1",
+    "question": "ASTER_X2 V1 的 HVAC 是几区空调，温度范围是多少？",
+    "category": "comfort",
+    "critical": false,
+    "expected_fallback": false,
+    "answer": "ASTER_X2 v1 配备双区自动空调（双区），温度范围为 16°C–30°C，驾驶员和前排乘客可分别设置。",
+    "is_fallback": false,
+    "fallback_reason": null,
+    "required_citation_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:hvac"
+    ],
+    "allowed_citation_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:hvac"
+    ],
+    "cited_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:hvac"
+    ],
+    "citation_vehicle_ids": [
+      "alpha_aster_x2_max_v1"
+    ],
+    "citation_document_versions": [
+      "1.0"
+    ],
+    "answer_correct": true,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": true,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  },
+  {
+    "case_id": "x2_v1_underwater_mode_answer_001",
+    "vehicle_id": "alpha_aster_x2_max_v1",
+    "question": "水下驾驶模式应该如何启动？",
+    "category": "no_answer",
+    "critical": false,
+    "expected_fallback": true,
+    "answer": "未在当前车辆资料中找到足够可靠的依据。",
+    "is_fallback": true,
+    "fallback_reason": "no_retrieval_results",
+    "required_citation_chunk_ids": [],
+    "allowed_citation_chunk_ids": [],
+    "cited_chunk_ids": [],
+    "citation_vehicle_ids": [],
+    "citation_document_versions": [],
+    "answer_correct": null,
+    "citation_correct": true,
+    "fallback_correct": true,
+    "grounded": null,
+    "critical_error": false,
+    "cross_vehicle_answer_error": false,
+    "cross_version_answer_error": false,
+    "missing_keyword_groups": [],
+    "unsupported_keyword_groups": [],
+    "matched_forbidden_phrases": [],
+    "missing_required_citation_chunk_ids": [],
+    "unexpected_citation_chunk_ids": [],
+    "runtime_error": null
+  }
+]

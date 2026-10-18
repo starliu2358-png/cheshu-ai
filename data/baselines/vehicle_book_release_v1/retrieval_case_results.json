@@ -1,0 +1,972 @@
+[
+  {
+    "case_id": "x1_v1_lcc_30kph",
+    "vehicle_id": "alpha_aster_x1_max_v1",
+    "question": "ASTER_X1 V1 在 30km/h 时是否可以开启 LCC？",
+    "category": "version_difference",
+    "critical": true,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x1_v1_adas:lane-centering-control"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x1_v1_adas:lane-centering-control",
+      "oem_alpha_aster_x1_v1_owner_manual:warning-lights",
+      "oem_alpha_aster_x1_v1_configuration:version-discriminator"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x1_max_v1",
+      "alpha_aster_x1_max_v1",
+      "alpha_aster_x1_max_v1"
+    ],
+    "retrieved_document_versions": [
+      "1.0",
+      "1.0",
+      "1.0"
+    ],
+    "scores": [
+      3.841699092043997,
+      2.229202160964317,
+      1.5360630670001292
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 1.0,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x1_v1_lcc_lane_markings",
+    "vehicle_id": "alpha_aster_x1_max_v1",
+    "question": "开启 LCC 对左右车道线有什么要求？",
+    "category": "feature_explanation",
+    "critical": false,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x1_v1_adas:lane-centering-control"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x1_v1_adas:lane-centering-control",
+      "oem_alpha_aster_x1_v1_configuration:version-discriminator",
+      "oem_alpha_aster_x1_v1_configuration:aster_x1-v1-configuration"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x1_max_v1",
+      "alpha_aster_x1_max_v1",
+      "alpha_aster_x1_max_v1"
+    ],
+    "retrieved_document_versions": [
+      "1.0",
+      "1.0",
+      "1.0"
+    ],
+    "scores": [
+      3.841699092043997,
+      1.5360630670001292,
+      0.892123964676931
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 1.0,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x1_v1_hpa_support",
+    "vehicle_id": "alpha_aster_x1_max_v1",
+    "question": "ASTER_X1 V1 是否支持 HPA 记忆泊车？",
+    "category": "version_difference",
+    "critical": true,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x1_v1_adas:hpa"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x1_v1_adas:hpa",
+      "oem_alpha_aster_x1_v1_configuration:version-discriminator",
+      "oem_alpha_aster_x1_v1_configuration:aster_x1-v1-configuration"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x1_max_v1",
+      "alpha_aster_x1_max_v1",
+      "alpha_aster_x1_max_v1"
+    ],
+    "retrieved_document_versions": [
+      "1.0",
+      "1.0",
+      "1.0"
+    ],
+    "scores": [
+      4.915043643970521,
+      1.876187857154739,
+      1.0896636899632328
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 1.0,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x1_v1_acc_speed_range",
+    "vehicle_id": "alpha_aster_x1_max_v1",
+    "question": "ASTER_X1 V1 的 ACC 可设定车速范围是多少？",
+    "category": "configuration",
+    "critical": false,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x1_v1_adas:acc"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x1_v1_adas:acc",
+      "oem_alpha_aster_x1_v1_owner_manual:warning-lights",
+      "oem_alpha_aster_x1_v1_configuration:version-discriminator"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x1_max_v1",
+      "alpha_aster_x1_max_v1",
+      "alpha_aster_x1_max_v1"
+    ],
+    "retrieved_document_versions": [
+      "1.0",
+      "1.0",
+      "1.0"
+    ],
+    "scores": [
+      25.010848825573557,
+      1.8911557922956466,
+      1.5360630670001292
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 1.0,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x1_v1_aeb_speed_range",
+    "vehicle_id": "alpha_aster_x1_max_v1",
+    "question": "ASTER_X1 V1 的 AEB 对车辆和行人的工作速度范围分别是多少？",
+    "category": "configuration",
+    "critical": false,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x1_v1_adas:aeb"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x1_v1_adas:aeb",
+      "oem_alpha_aster_x1_v1_configuration:aster_x1-v1-configuration"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x1_max_v1",
+      "alpha_aster_x1_max_v1"
+    ],
+    "retrieved_document_versions": [
+      "1.0",
+      "1.0"
+    ],
+    "scores": [
+      9.746798631143392,
+      1.3541396838139679
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 1.0,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x1_v1_seat_ventilation",
+    "vehicle_id": "alpha_aster_x1_max_v1",
+    "question": "ASTER_X1 V1 的座椅通风支持哪些座椅和档位？",
+    "category": "comfort",
+    "critical": false,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x1_v1_owner_manual:seat-ventilation"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x1_v1_owner_manual:seat-ventilation"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x1_max_v1"
+    ],
+    "retrieved_document_versions": [
+      "1.0"
+    ],
+    "scores": [
+      17.782891286552445
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 1.0,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x1_v1_seat_heating",
+    "vehicle_id": "alpha_aster_x1_max_v1",
+    "question": "ASTER_X1 V1 的座椅加热支持几个档位？",
+    "category": "comfort",
+    "critical": false,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x1_v1_owner_manual:seat-heating"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x1_v1_owner_manual:seat-heating"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x1_max_v1"
+    ],
+    "retrieved_document_versions": [
+      "1.0"
+    ],
+    "scores": [
+      19.036819830811258
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 1.0,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x1_v1_battery_capacity",
+    "vehicle_id": "alpha_aster_x1_max_v1",
+    "question": "ASTER_X1 V1 的动力电池容量是多少？",
+    "category": "charging",
+    "critical": false,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x1_v1_owner_manual:battery-and-charging"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x1_v1_owner_manual:battery-and-charging"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x1_max_v1"
+    ],
+    "retrieved_document_versions": [
+      "1.0"
+    ],
+    "scores": [
+      10.369104795018954
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 1.0,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x1_v1_dc_charging_power",
+    "vehicle_id": "alpha_aster_x1_max_v1",
+    "question": "ASTER_X1 V1 的最大直流快充功率是多少？",
+    "category": "version_difference",
+    "critical": true,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x1_v1_owner_manual:battery-and-charging"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x1_v1_owner_manual:battery-and-charging"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x1_max_v1"
+    ],
+    "retrieved_document_versions": [
+      "1.0"
+    ],
+    "scores": [
+      8.430759492515788
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 1.0,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x1_v1_no_answer_flight_mode",
+    "vehicle_id": "alpha_aster_x1_max_v1",
+    "question": "飞行模式应该如何开启？",
+    "category": "no_answer",
+    "critical": false,
+    "expected_no_answer": true,
+    "relevant_chunk_ids": [],
+    "retrieved_chunk_ids": [],
+    "retrieved_vehicle_ids": [],
+    "retrieved_document_versions": [],
+    "scores": [],
+    "hit_at_1": null,
+    "hit_at_3": null,
+    "recall_at_3": null,
+    "reciprocal_rank": null,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": false
+  },
+  {
+    "case_id": "x1_v2_lcc_30kph",
+    "vehicle_id": "alpha_aster_x1_max_v2",
+    "question": "ASTER_X1 V2 在 30km/h 时是否可以开启 LCC？",
+    "category": "version_difference",
+    "critical": true,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x1_v2_adas:lane-centering-control"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x1_v2_adas:lane-centering-control",
+      "oem_alpha_aster_x1_v2_configuration:version-discriminator",
+      "oem_alpha_aster_x1_v2_configuration:aster_x1-v2-configuration"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x1_max_v2",
+      "alpha_aster_x1_max_v2",
+      "alpha_aster_x1_max_v2"
+    ],
+    "retrieved_document_versions": [
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "scores": [
+      3.898338728160546,
+      1.4569637328814737,
+      0.8699358617825488
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 1.0,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x1_v2_hpa_support",
+    "vehicle_id": "alpha_aster_x1_max_v2",
+    "question": "ASTER_X1 V2 是否支持 HPA 记忆泊车？",
+    "category": "version_difference",
+    "critical": true,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x1_v2_adas:hpa"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x1_v2_adas:hpa",
+      "oem_alpha_aster_x1_v2_configuration:version-discriminator",
+      "oem_alpha_aster_x1_v2_configuration:aster_x1-v2-configuration"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x1_max_v2",
+      "alpha_aster_x1_max_v2",
+      "alpha_aster_x1_max_v2"
+    ],
+    "retrieved_document_versions": [
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "scores": [
+      3.817035529145794,
+      1.4569637328814737,
+      0.8699358617825488
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 1.0,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x1_v2_hpa_route_count_length",
+    "vehicle_id": "alpha_aster_x1_max_v2",
+    "question": "ASTER_X1 V2 的 HPA 最多能保存几条路线，每条最长多少米？",
+    "category": "configuration",
+    "critical": false,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x1_v2_adas:hpa"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x1_v2_owner_manual:warning-lights",
+      "oem_alpha_aster_x1_v2_adas:hpa",
+      "oem_alpha_aster_x1_v2_configuration:version-discriminator"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x1_max_v2",
+      "alpha_aster_x1_max_v2",
+      "alpha_aster_x1_max_v2"
+    ],
+    "retrieved_document_versions": [
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "scores": [
+      3.8624951746412926,
+      3.817035529145794,
+      1.4569637328814737
+    ],
+    "hit_at_1": false,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 0.5,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x1_v2_acc_speed_range",
+    "vehicle_id": "alpha_aster_x1_max_v2",
+    "question": "ASTER_X1 V2 的 ACC 可设定车速范围是多少？",
+    "category": "configuration",
+    "critical": false,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x1_v2_adas:acc"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x1_v2_adas:acc",
+      "oem_alpha_aster_x1_v2_configuration:version-discriminator",
+      "oem_alpha_aster_x1_v2_configuration:aster_x1-v2-configuration"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x1_max_v2",
+      "alpha_aster_x1_max_v2",
+      "alpha_aster_x1_max_v2"
+    ],
+    "retrieved_document_versions": [
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "scores": [
+      27.257874550695806,
+      1.4569637328814737,
+      0.8699358617825488
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 1.0,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x1_v2_aeb_speed_range",
+    "vehicle_id": "alpha_aster_x1_max_v2",
+    "question": "ASTER_X1 V2 的 AEB 对车辆和行人的工作速度范围分别是多少？",
+    "category": "configuration",
+    "critical": false,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x1_v2_adas:aeb"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x1_v2_adas:aeb",
+      "oem_alpha_aster_x1_v2_configuration:aster_x1-v2-configuration"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x1_max_v2",
+      "alpha_aster_x1_max_v2"
+    ],
+    "retrieved_document_versions": [
+      "2.0",
+      "2.0"
+    ],
+    "scores": [
+      10.413611326823776,
+      1.3204607425149173
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 1.0,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x1_v2_auto_seat_heating",
+    "vehicle_id": "alpha_aster_x1_max_v2",
+    "question": "ASTER_X1 V2 的自动座椅加热在什么条件下可以启用？",
+    "category": "comfort",
+    "critical": false,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x1_v2_owner_manual:seat-heating"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x1_v2_owner_manual:seat-heating"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x1_max_v2"
+    ],
+    "retrieved_document_versions": [
+      "2.0"
+    ],
+    "scores": [
+      23.37913652384184
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 1.0,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x1_v2_battery_capacity",
+    "vehicle_id": "alpha_aster_x1_max_v2",
+    "question": "ASTER_X1 V2 的动力电池容量是多少？",
+    "category": "charging",
+    "critical": false,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x1_v2_owner_manual:battery-and-charging"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x1_v2_owner_manual:battery-and-charging"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x1_max_v2"
+    ],
+    "retrieved_document_versions": [
+      "2.0"
+    ],
+    "scores": [
+      10.640783753476246
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 1.0,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x1_v2_dc_charging_power",
+    "vehicle_id": "alpha_aster_x1_max_v2",
+    "question": "ASTER_X1 V2 的最大直流快充功率是多少？",
+    "category": "version_difference",
+    "critical": true,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x1_v2_owner_manual:battery-and-charging"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x1_v2_owner_manual:battery-and-charging"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x1_max_v2"
+    ],
+    "retrieved_document_versions": [
+      "2.0"
+    ],
+    "scores": [
+      7.180172817917364
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 1.0,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x1_v2_fast_charge_preheating",
+    "vehicle_id": "alpha_aster_x1_max_v2",
+    "question": "导航到快充站后，ASTER_X1 V2 会自动进行电池预热吗？",
+    "category": "charging",
+    "critical": false,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x1_v2_owner_manual:battery-and-charging"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x1_v2_owner_manual:battery-and-charging"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x1_max_v2"
+    ],
+    "retrieved_document_versions": [
+      "2.0"
+    ],
+    "scores": [
+      29.909274184942113
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 1.0,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x1_v2_no_answer_mars",
+    "vehicle_id": "alpha_aster_x1_max_v2",
+    "question": "如何让车辆自动驾驶去火星？",
+    "category": "no_answer",
+    "critical": false,
+    "expected_no_answer": true,
+    "relevant_chunk_ids": [],
+    "retrieved_chunk_ids": [],
+    "retrieved_vehicle_ids": [],
+    "retrieved_document_versions": [],
+    "scores": [],
+    "hit_at_1": null,
+    "hit_at_3": null,
+    "recall_at_3": null,
+    "reciprocal_rank": null,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": false
+  },
+  {
+    "case_id": "x2_v1_lcc_speed_range",
+    "vehicle_id": "alpha_aster_x2_max_v1",
+    "question": "ASTER_X2 V1 的 LCC 工作车速范围是多少？",
+    "category": "vehicle_difference",
+    "critical": true,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x2_v1_adas:lcc"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x2_v1_adas:lcc",
+      "oem_alpha_aster_x2_v1_adas:acc",
+      "oem_alpha_aster_x2_v1_owner_manual:warning-lights"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x2_max_v1",
+      "alpha_aster_x2_max_v1",
+      "alpha_aster_x2_max_v1"
+    ],
+    "retrieved_document_versions": [
+      "1.0",
+      "1.0",
+      "1.0"
+    ],
+    "scores": [
+      21.282568158908408,
+      7.714956356266572,
+      1.74673644700643
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 1.0,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x2_v1_hpa_support",
+    "vehicle_id": "alpha_aster_x2_max_v1",
+    "question": "ASTER_X2 V1 是否支持 HPA 记忆泊车？",
+    "category": "vehicle_difference",
+    "critical": true,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x2_v1_adas:hpa"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x2_v1_adas:hpa",
+      "oem_alpha_aster_x2_v1_configuration:aster_x2-v1-configuration"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x2_max_v1",
+      "alpha_aster_x2_max_v1"
+    ],
+    "retrieved_document_versions": [
+      "1.0",
+      "1.0"
+    ],
+    "scores": [
+      15.020329168212534,
+      1.3540148008423294
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 1.0,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x2_v1_hpa_route_count_length",
+    "vehicle_id": "alpha_aster_x2_max_v1",
+    "question": "ASTER_X2 V1 的 HPA 最多能保存几条路线，每条最长多少米？",
+    "category": "configuration",
+    "critical": false,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x2_v1_adas:hpa"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x2_v1_adas:hpa",
+      "oem_alpha_aster_x2_v1_configuration:aster_x2-v1-configuration"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x2_max_v1",
+      "alpha_aster_x2_max_v1"
+    ],
+    "retrieved_document_versions": [
+      "1.0",
+      "1.0"
+    ],
+    "scores": [
+      22.003895680869398,
+      1.3540148008423294
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 1.0,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x2_v1_ventilation_trims",
+    "vehicle_id": "alpha_aster_x2_max_v1",
+    "question": "ASTER_X2 V1 的哪些配置支持座椅通风？",
+    "category": "vehicle_difference",
+    "critical": true,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:seat-ventilation"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:seat-ventilation"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x2_max_v1"
+    ],
+    "retrieved_document_versions": [
+      "1.0"
+    ],
+    "scores": [
+      17.070066405415822
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 1.0,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x2_v1_ventilation_levels",
+    "vehicle_id": "alpha_aster_x2_max_v1",
+    "question": "ASTER_X2 V1 的座椅通风有几个档位？",
+    "category": "comfort",
+    "critical": false,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:seat-ventilation"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:seat-ventilation"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x2_max_v1"
+    ],
+    "retrieved_document_versions": [
+      "1.0"
+    ],
+    "scores": [
+      13.900656991348445
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 1.0,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x2_v1_heated_seats",
+    "vehicle_id": "alpha_aster_x2_max_v1",
+    "question": "ASTER_X2 V1 的哪些座椅支持加热？",
+    "category": "comfort",
+    "critical": false,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:seat-heating"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:seat-heating"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x2_max_v1"
+    ],
+    "retrieved_document_versions": [
+      "1.0"
+    ],
+    "scores": [
+      8.339641589119182
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 1.0,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x2_v1_battery_capacity",
+    "vehicle_id": "alpha_aster_x2_max_v1",
+    "question": "ASTER_X2 V1 的动力电池容量是多少？",
+    "category": "charging",
+    "critical": false,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:battery-and-charging"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:warning-lights",
+      "oem_alpha_aster_x2_v1_owner_manual:battery-and-charging"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x2_max_v1",
+      "alpha_aster_x2_max_v1"
+    ],
+    "retrieved_document_versions": [
+      "1.0",
+      "1.0"
+    ],
+    "scores": [
+      9.780152644952713,
+      8.586946456685013
+    ],
+    "hit_at_1": false,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 0.5,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x2_v1_dc_charging_power",
+    "vehicle_id": "alpha_aster_x2_max_v1",
+    "question": "ASTER_X2 V1 的最大直流快充功率是多少？",
+    "category": "vehicle_difference",
+    "critical": true,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:battery-and-charging"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:battery-and-charging"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x2_max_v1"
+    ],
+    "retrieved_document_versions": [
+      "1.0"
+    ],
+    "scores": [
+      9.361472119468173
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 1.0,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x2_v1_hvac_zones_temperature",
+    "vehicle_id": "alpha_aster_x2_max_v1",
+    "question": "ASTER_X2 V1 的 HVAC 是几区空调，温度范围是多少？",
+    "category": "comfort",
+    "critical": false,
+    "expected_no_answer": false,
+    "relevant_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:hvac"
+    ],
+    "retrieved_chunk_ids": [
+      "oem_alpha_aster_x2_v1_owner_manual:hvac",
+      "oem_alpha_aster_x2_v1_configuration:model-discriminator",
+      "oem_alpha_aster_x2_v1_configuration:aster_x2-v1-configuration"
+    ],
+    "retrieved_vehicle_ids": [
+      "alpha_aster_x2_max_v1",
+      "alpha_aster_x2_max_v1",
+      "alpha_aster_x2_max_v1"
+    ],
+    "retrieved_document_versions": [
+      "1.0",
+      "1.0",
+      "1.0"
+    ],
+    "scores": [
+      8.555645730471406,
+      1.9352782473787542,
+      1.0895631977899987
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "recall_at_3": 1.0,
+    "reciprocal_rank": 1.0,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": null
+  },
+  {
+    "case_id": "x2_v1_no_answer_underwater",
+    "vehicle_id": "alpha_aster_x2_max_v1",
+    "question": "水下驾驶模式应该如何启动？",
+    "category": "no_answer",
+    "critical": false,
+    "expected_no_answer": true,
+    "relevant_chunk_ids": [],
+    "retrieved_chunk_ids": [],
+    "retrieved_vehicle_ids": [],
+    "retrieved_document_versions": [],
+    "scores": [],
+    "hit_at_1": null,
+    "hit_at_3": null,
+    "recall_at_3": null,
+    "reciprocal_rank": null,
+    "cross_vehicle_errors": 0,
+    "cross_version_errors": 0,
+    "no_answer_false_positive": false
+  }
+]

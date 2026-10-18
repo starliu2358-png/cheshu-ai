@@ -1,0 +1,51 @@
+{
+  "title": "车书 Agent V1.0——核心业务能力验收与多轮对话可靠性优化",
+  "review_date": "2026-10-18",
+  "scope": "React/FastAPI /api/v1/answers only; excludes legacy Gradio",
+  "suggestion_source": "https://chatgpt.com/share/6ad39e59-bcc4-83ec-8a23-7f584a19908e",
+  "suite_note": "分享链接给出5/4/4/5/6案例配额和辅助转向追问示例；完整题目由本项目在运行前固定。",
+  "runs": {
+    "first_full": "20261018_002425",
+    "first_targeted": "20261018_002725",
+    "final_targeted": "20261018_002920"
+  },
+  "counts": {
+    "product_cases": 24,
+    "basic_cases": 4,
+    "first_full_turns": 50,
+    "first_full_http_success": 50,
+    "first_full_expected_clarifications": 1,
+    "first_full_failed_runtime_answers": 0,
+    "first_targeted_turns": 7,
+    "first_targeted_failed_runtime_answers": 1,
+    "final_targeted_turns": 6,
+    "final_targeted_failed_runtime_answers": 0
+  },
+  "capabilities": [
+    {"name": "车辆功能问答", "implementation": "implemented", "functional_cases": "5/5", "quality": "样例主要问题得到回答；知识深度受摘要覆盖限制"},
+    {"name": "手册检索与追溯", "implementation": "implemented", "functional_cases": "4/4 first full; R4 failed once in retry then passed", "quality": "引用落到当前索引；小节标题是整理标题，不等同官网精确页码定位"},
+    {"name": "配置差异对比", "implementation": "implemented", "functional_cases": "4/4 main comparisons", "quality": "C2首次附加更省电推断超出证据；后续复测不再有该结论，但参数因果表述仍值得收紧"},
+    {"name": "边界与不确定性", "implementation": "implemented_with_limits", "functional_cases": "5/5 defined scenarios", "quality": "支持一般解释、实时车况边界和禁止真实控制；条件支持以正文表达，无独立枚举；不声称消除错误"},
+    {"name": "连续追问与主动换题", "implementation": "minimum_fix_implemented", "functional_cases": "5/6 first full; M5 passed final targeted retest", "quality": "四轮对话均可切题；跨配置代词指向通过referenced_trim修复，未在最终代码上重跑整套多次稳定性评测"}
+  ],
+  "failed_or_notable_cases": [
+    {"case": "M5", "first_issue": "长续航全驱后追问它的音响，回复优先回到绑定后驱的9个扬声器", "fix": "结构化discussed_trim/referenced_trim与绑定车型分离", "latest": "优先答长续航全驱15个扬声器、2低音炮、2功放"},
+    {"case": "R4", "first_retry_issue": "召回4块相关证据仍返回invalid_final_output", "fix": "兼容JSON代码围栏；细化schema字段错误和最终校验原因日志", "latest": "主动巡航解释及出处追问均正常；不能从单次成功证明所有校验失败根因已消失"},
+    {"case": "C2", "issue": "由续航更长推断更省电，资料无足够因果依据", "latest": "加约束后不再输出更省电，但仍有加速差异来自驱动形式的简化因果陈述"},
+    {"case": "M2 turn 4", "issue": "回答加入前后排或左右温区细节，而召回片段仅说明温度分区", "status": "professional_quality_follow_up"},
+    {"case": "M3 turn 3", "issue": "停止充电步骤资料不足，常识补充中的备选方法表达较含混", "status": "needs_manual_operating_procedure_review"},
+    {"case": "M1", "issue": "雨天解释有一般推断混入官方来源正文", "status": "citation_entailment_follow_up"}
+  ],
+  "insufficiency_diagnosis": {
+    "history": "SQLiteSessionStore -> context_for -> AgentContext/_prompt -> tool query -> evidence -> generation -> append_completed_answer；历史实际参与链路",
+    "known_context_faults": ["那/呢压过明确新功能", "待澄清状态强制继承", "USB改写丢失格式化细节", "绑定车型压过当前比较对象", "从模型回答提取主题导致污染"],
+    "knowledge_gap_example": "B5咖啡豆两次零召回，返回general解释而非整段拒答",
+    "output_failure_example": "R4复测evidence_count=4但invalid_final_output，不应归为手册缺资料",
+    "retrieval_quality_example": "M3接口追问先检索USB再纠正为充电接口，结果正确但有一次冗余检索",
+    "source_limit": "元数据和chunk_id校验不能证明每句推断均由引用蕴含"
+  },
+  "first_full_budgets": {"max_model_turns": 3, "max_retrieval_calls": 2, "max_agent_duration_ms": 5234},
+  "release_decision": "NOT_FULLY_CERTIFIED",
+  "release_reason": "功能闭环与P0最小改造完成；不能把HTTP成功/有正文等同于事实准确或引用正确。保留首轮与复测失败，尚未完成最终代码全套重复跑、逐句引用覆盖和关键安全错误复核。",
+  "next_priorities": ["P0重复验证多轮和校验失败", "P1完善操作资料、答案证据覆盖和配置因果表述", "P2保持时间星期问候能力，不扩展天气新闻或旧Gradio链路"]
+}

@@ -1,0 +1,43 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.sqlite
+*.sqlite3
+*.db
+.superdesign/
+
+# Virtual environment
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Test cache
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+.superdesign/tmp/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/coverage/
+frontend/*.tsbuildinfo
+frontend/vite.config.js
+frontend/vite.config.d.ts
+
+# Local product feedback
+outputs/feedback/
+outputs/indexes/
+outputs/logs/
+outputs/state/
+outputs/*.log
+
+# OS
+.DS_Store
+Thumbs.db

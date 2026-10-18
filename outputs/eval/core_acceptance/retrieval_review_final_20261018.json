@@ -1,0 +1,89 @@
+{
+  "dataset_path": "data\\eval\\vehicle_book_retrieval_eval.jsonl",
+  "supplementary_dataset_path": "data\\eval\\vehicle_book_retrieval_v12_supplement.jsonl",
+  "dataset_sha256": {
+    "data\\eval\\vehicle_book_retrieval_eval.jsonl": "f157de9d7cd62b38e948e08b97641c44b586874e9171c74c0e16ab34d9d19313",
+    "data\\eval\\vehicle_book_retrieval_v12_supplement.jsonl": "7d700868092eb2486562cb9a7c0faec5eb3d944b2be68d5e6a5a45e84c1a4446"
+  },
+  "top_k": 3,
+  "embedding_model": "BAAI/bge-small-zh-v1.5",
+  "retrievers": {
+    "bm25": {
+      "case_count": 38,
+      "hit_at_1": 0.7878787878787878,
+      "hit_at_3": 0.8484848484848485,
+      "recall_at_3": 0.8484848484848485,
+      "mrr": 0.8181818181818182,
+      "cross_vehicle_error_rate": 0.0,
+      "cross_version_error_rate": 0.0,
+      "no_answer_false_positive_rate": 0.0,
+      "cold_start_latency_ms": 19.61,
+      "total_latency_ms": 181.06,
+      "mean_latency_ms": 4.76,
+      "p95_latency_ms": 10.35,
+      "missed_case_ids": [
+        "tesla_synonym_charge_port",
+        "tesla_english_bluetooth",
+        "tesla_autopilot_alias",
+        "tesla_front_compartment_alias",
+        "tesla_scheduled_energy_alias"
+      ],
+      "false_positive_case_ids": []
+    },
+    "vector": {
+      "case_count": 38,
+      "hit_at_1": 0.8484848484848485,
+      "hit_at_3": 0.8787878787878788,
+      "recall_at_3": 0.8787878787878788,
+      "mrr": 0.8585858585858586,
+      "cross_vehicle_error_rate": 0.0,
+      "cross_version_error_rate": 0.0,
+      "no_answer_false_positive_rate": 0.2,
+      "cold_start_latency_ms": 17356.52,
+      "total_latency_ms": 913.03,
+      "mean_latency_ms": 24.03,
+      "p95_latency_ms": 30.35,
+      "missed_case_ids": [
+        "x1_v1_lcc_30kph",
+        "x1_v1_lcc_lane_markings",
+        "x1_v2_lcc_30kph",
+        "x1_v2_hpa_support"
+      ],
+      "false_positive_case_ids": [
+        "tesla_no_answer_fridge"
+      ]
+    },
+    "hybrid_rrf": {
+      "case_count": 38,
+      "hit_at_1": 0.9393939393939394,
+      "hit_at_3": 1.0,
+      "recall_at_3": 1.0,
+      "mrr": 0.9696969696969697,
+      "cross_vehicle_error_rate": 0.0,
+      "cross_version_error_rate": 0.0,
+      "no_answer_false_positive_rate": 0.0,
+      "cold_start_latency_ms": 486.79,
+      "total_latency_ms": 1505.56,
+      "mean_latency_ms": 39.62,
+      "p95_latency_ms": 56.67,
+      "missed_case_ids": [],
+      "false_positive_case_ids": []
+    }
+  },
+  "retrieval_gate": {
+    "passed": true,
+    "checks": {
+      "recall_at_3_not_below_bm25": true,
+      "hit_at_1_at_least_90_percent": true,
+      "mrr_at_least_90_percent": true,
+      "cross_vehicle_errors_zero": true,
+      "cross_version_errors_zero": true,
+      "no_answer_false_positives_not_above_bm25": true
+    }
+  },
+  "reranker": {
+    "triggered": false,
+    "status": "not_enabled",
+    "reason": "Hybrid Hit@1 and MRR exceed the predefined trigger."
+  }
+}

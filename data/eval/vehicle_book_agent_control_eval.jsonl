@@ -1,0 +1,10 @@
+{"case_id":"agent_single_search","scenario":"single_search","category":"tool_loop","critical":true}
+{"case_id":"agent_rewrite_after_empty","scenario":"rewrite_after_empty","category":"query_rewrite","critical":true}
+{"case_id":"agent_retrieval_limit","scenario":"retrieval_limit","category":"budget","critical":true}
+{"case_id":"agent_duplicate_query","scenario":"duplicate_query","category":"budget","critical":true}
+{"case_id":"agent_timeout","scenario":"timeout","category":"budget","critical":true}
+{"case_id":"agent_cross_vehicle_filter","scenario":"cross_vehicle_filter","category":"isolation","critical":true}
+{"case_id":"agent_unknown_citation","scenario":"unknown_citation","category":"citation","critical":true}
+{"case_id":"agent_operation_not_capability","scenario":"operation_not_capability","category":"hallucination_control","critical":true}
+{"case_id":"agent_prompt_injection_data","scenario":"prompt_injection_data","category":"prompt_injection","critical":true}
+{"case_id":"agent_structured_follow_up","scenario":"structured_follow_up","category":"session","critical":true}

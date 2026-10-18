@@ -1,0 +1,240 @@
+{
+  "tesla_model3_rwd_cn_usb_recording_2024plus:哨兵模式和行车记录仪-usb-设备要求": {
+    "text": "## 哨兵模式和行车记录仪 USB 设备要求\n\n用于哨兵模式或行车记录仪录像的 USB 设备应至少有 64 GB 存储空间，持续写入速度至少为 4 MB/s，并兼容 USB 2.0；USB 3.0 设备也须支持 USB 2.0。持续写入速度不同于峰值速度。设备需要正确格式化。\n\n录像应使用手套箱内的 USB-A 接口。中控台及后部触摸屏下方的 USB-C 接口不支持录像设备的格式化、视频保存或查看。",
+    "section": "哨兵模式和行车记录仪 USB 设备要求",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_usb_recording_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/GUID-F311BBCA-2532-4D04-B88C-DBA784ADEE21.html"
+  },
+  "tesla_model3_rwd_cn_usb_recording_2024plus:usb-格式化和录像文件夹": {
+    "text": "## USB 格式化和录像文件夹\n\n在车辆上选择“控制” > “安全” > “格式化 USB 设备”，会将设备格式化为 exFAT，并建立 TeslaCam 文件夹；配备赛道模式时还会建立 TeslaTrackMode 文件夹。车载格式化要求设备分区数量不超过一个。\n\n格式化会清除 USB 设备现有内容，操作前应将需要保留的文件备份到其他设备。\n\n若使用电脑手动格式化，可选 exFAT、MS-DOS FAT（Mac）、ext3 或 ext4，当前不支持 NTFS。在根目录建立 TeslaCam 文件夹，完成后将设备插入支持录像的接口，并确认行车记录仪及哨兵模式可用。",
+    "section": "USB 格式化和录像文件夹",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_usb_recording_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/GUID-F311BBCA-2532-4D04-B88C-DBA784ADEE21.html"
+  },
+  "tesla_model3_rwd_cn_charging_interfaces_2024plus:充电口数量与交流直流接口": {
+    "text": "## 充电口数量与交流直流接口\n\n中国版 Model 3 2024+ 的国标（GB）充电接口总成区分交流（AC）接口与直流（DC）接口。按连接充电枪的接口计算，是两个接口：交流充电接口和直流充电接口；不能把一个充电口盖板等同于只有一个插枪接口，也不能套用其他市场的单接口结构。\n\n本条是对 Tesla Model 3 2024+ 维修手册“Charge Port (GB)”中分别列出的交流与直流连接结构的整理，仅用于识别中国版充电接口，不提供维修或拆装操作。维修手册中的高压作业要求由具备相应资质的人员实施。",
+    "section": "充电口数量与交流直流接口",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_charging_interfaces_2024plus",
+    "source_url": "https://service.tesla.cn/docs/Model3/ServiceManual/2024/zh-cn/GUID-272F8466-1673-42B7-A437-B94BED7711A4.html"
+  },
+  "tesla_model3_rwd_cn_charging_2024plus:打开充电端口": {
+    "text": "## 打开充电端口\n\nModel 3 的充电接口位于车辆左侧、后尾灯总成的盖板后方。请先停放好车辆，确保充电电缆能够轻松连接充电接口。\n\n车辆处于驻车挡时，可以按下并释放 Tesla 充电电缆上的按钮，打开充电接口盖板。\n\n还可以使用以下方法：\n\n- 在触摸屏上点击“控制”，再点击“充电接口”闪电图标。\n- 在触摸屏上依次点击“控制” > “充电” > “打开充电接口”。\n- 车辆已解锁且附近有经过认证的手机时，按充电接口盖板底部；如果车辆处于休眠状态，可先拉动车门把手唤醒车辆后重试。\n- 在单独购买的遥控钥匙上按住后备箱按钮 1 至 2 秒。\n- 使用车辆语音命令打开充电接口盖板。\n\n警告：切勿强行打开充电接口盖板。",
+    "section": "打开充电端口",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_charging_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/GUID-BEE08D47-0CE0-4BDD-83F2-9854FB3D578F.html"
+  },
+  "tesla_model3_rwd_cn_charging_2024plus:连接充电电缆": {
+    "text": "## 连接充电电缆\n\n使用移动连接器时，先连接电源插座，再连接车辆；连接器应对正充电接口并完全插入。具体设备与适配器的使用方式应遵循移动连接器用户手册。\n\n充电接口外观可能因市场区域和生产日期不同而有差异。本节的盖板位置和打开方法不能单独用来判断盖板内的插枪接口数量。",
+    "section": "连接充电电缆",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_charging_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/GUID-BEE08D47-0CE0-4BDD-83F2-9854FB3D578F.html"
+  },
+  "tesla_model3_rwd_cn_charging_2024plus:停止充电与正常拔出连接器": {
+    "text": "## 停止充电与正常拔出连接器\n\n在触摸屏上选择“停止充电”即可结束充电。需要拔下电缆时，先让车辆解锁或识别到有效钥匙，再长按连接器按钮解开闩锁，然后拔出连接器；盖板随后自动关闭，不要用手强行关盖板。\n\n第三方充电电缆没有解锁按钮时，手册还提供长拉左后车门把手数秒的停止充电、松开电缆方法。普通停止充电不需要使用应急释放拉索。",
+    "section": "停止充电与正常拔出连接器",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_charging_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/GUID-BEE08D47-0CE0-4BDD-83F2-9854FB3D578F.html"
+  },
+  "tesla_model3_rwd_cn_charging_2024plus:充电连接器无法正常拔出": {
+    "text": "## 充电连接器无法正常拔出\n\n先确认车辆已解锁或识别钥匙，尝试手柄按钮、触摸屏或手机应用的常规释放方式，不要强拉锁住的电缆。若是低温冻结，可在“控制 > 维护 > 入口加热器”加热解冻（最长两小时）。仍无法正常释放时，核对官方手册的异常释放说明；无法判断安全条件时联系服务中心。",
+    "section": "充电连接器无法正常拔出",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_charging_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/GUID-BEE08D47-0CE0-4BDD-83F2-9854FB3D578F.html"
+  },
+  "tesla_model3_rwd_cn_charging_2024plus:异常情况下手动释放充电电缆": {
+    "text": "## 异常情况下手动释放充电电缆\n\n仅常规释放全部无效时才考虑此程序，不能作为日常拔枪方式。先在触摸屏确认车辆已停止充电，必要时先点“停止充电”。打开行李箱，向下拉充电接口释放拉索，完成解锁后再拔电缆；不得一边拉索一边拔电缆。\n\n正在充电或看到橙色高压导线暴露时禁止操作。反复使用释放拉索可能损坏设备；不确定能否安全完成时，应联系服务中心。",
+    "section": "异常情况下手动释放充电电缆",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_charging_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/GUID-BEE08D47-0CE0-4BDD-83F2-9854FB3D578F.html"
+  },
+  "tesla_model3_rwd_cn_sentry_2024plus:哨兵模式是什么以及如何使用": {
+    "text": "## 哨兵模式是什么以及如何使用\n\n哨兵模式是一项驻车安全功能。启用后，当 Model 3 上锁并处于驻车挡时，车辆会使用摄像头和传感器（如果配备）监测周围的可疑活动。检测到威胁时，车辆可能闪烁大灯、鸣响警报、在触摸屏显示提示、向 Tesla 手机应用程序发送提醒，并在已安装合适 USB 驱动器时保存事件视频。\n\n哨兵模式默认关闭。可在车辆处于驻车挡时依次点击“控制” > “安全” > “哨兵模式”开启，也可以使用 Tesla 手机应用程序或语音命令启用或停用。\n\n要保存摄像头录像，需要插入已正确格式化的 USB 设备，并启用行车记录仪；未插入 USB 设备时，检测到安全事件仍可能通过手机应用程序提醒，但不会保存摄像头录像。哨兵模式会增加功耗，也不能替代其他安全措施。\n\n注意：是否配备、具体表现和可用条件可能因市场区域、车辆配置、选装件及软件版本而不同，应以车辆触摸屏中的车主手册和实际车辆为准。",
+    "section": "哨兵模式是什么以及如何使用",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_sentry_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/GUID-56703182-8191-4DAE-AF07-2FDC0EB64663.html"
+  },
+  "tesla_model3_rwd_cn_assistance_2024plus:有哪些辅助驾驶功能": {
+    "text": "## 有哪些辅助驾驶功能\n\nTesla 中国车主手册将这些能力称为“辅助驾驶”，并明确说明它们不能让 Model 3 实现自动驾驶，也不能取代驾驶员。\n\n所有 Tesla 车辆均配备主动巡航控制，可保持设定车速，并与前方车辆保持可调节的跟车距离。车辆还可能配备辅助转向、辅助变道、辅助导航驾驶、辅助泊车和召唤功能；这些功能的实际可用性会因市场区域、生产日期、车辆配置、购买的选装件、辅助驾驶硬件和软件版本而不同。\n\n驾驶员始终需要关注路况、掌控车辆，并随时准备立即干预。",
+    "section": "有哪些辅助驾驶功能",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_assistance_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/GUID-101D1BF5-52D2-469A-A57D-E7230BBEE94B.html"
+  },
+  "tesla_model3_rwd_cn_assistance_2024plus:lcc-与辅助转向": {
+    "text": "## LCC 与辅助转向\n\nTesla 中国 Model 3 车主手册没有把相关功能命名为“LCC”。如果这里的 LCC 指车道居中类辅助，手册中最接近的官方功能名称是“辅助转向”：它在维持设定速度或跟车距离的同时，探测车道线、道路边缘、车辆和物体，帮助 Model 3 保持在当前车道内。\n\n仅凭所选车型配置不能确认某一辆车是否具备或已启用辅助转向。该功能可能受市场区域、生产日期、车辆配置、选装件、辅助驾驶硬件和软件版本影响，应在车辆触摸屏的“控制” > “辅助驾驶”及车内《车主手册》中核对。",
+    "section": "LCC 与辅助转向",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_assistance_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/GUID-101D1BF5-52D2-469A-A57D-E7230BBEE94B.html"
+  },
+  "tesla_model3_rwd_cn_configuration_current:不同配置的主要差异": {
+    "text": "## 不同配置的主要差异\n\n当前中国大陆官网列出的四款 Model 3，核心配置差异如下（续航为官网所列 CLTC 预估值）：\n\n- 后轮驱动版：后轮驱动，18 英寸轮毂时预估续航 634 公里，百公里加速 6.1 秒，最高充电功率 170 千瓦。\n- 长续航后轮驱动版：后轮驱动，18 英寸轮毂时预估续航 830 公里、19 英寸轮毂时 800 公里，百公里加速 5.2 秒，最高充电功率 170 千瓦。\n- 长续航全轮驱动版：双电机全轮驱动，18 英寸轮毂时预估续航 753 公里、19 英寸轮毂时 738 公里，百公里加速 3.8 秒，最高充电功率 250 千瓦。\n- Performance 高性能全轮驱动版：双电机全轮驱动，19 英寸轮毂，预估续航 647 公里，百公里加速 3.1 秒，最高充电功率 250 千瓦。",
+    "section": "不同配置的主要差异",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_configuration_current",
+    "source_url": "https://www.tesla.cn/model3"
+  },
+  "tesla_model3_rwd_cn_configuration_current:加速情况": {
+    "text": "## 加速情况\n\nModel 3 后轮驱动版百公里加速为 6.1 秒，长续航后轮驱动版为 5.2 秒，长续航全轮驱动版为 3.8 秒，Performance 高性能全轮驱动版为 3.1 秒。高性能版数据减去了第一英尺的起步时间，其余数据基于 Tesla 企业规范并以一位驾驶员为载荷测得。",
+    "section": "加速情况",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_configuration_current",
+    "source_url": "https://www.tesla.cn/model3"
+  },
+  "tesla_model3_rwd_cn_configuration_current:续航差异": {
+    "text": "## 续航差异\n\n使用 18 英寸轮毂时，后轮驱动版为 634 公里，长续航后轮驱动版为 830 公里，长续航全轮驱动版为 753 公里；选装 19 英寸轮毂时，两款长续航车型分别为 800 公里和 738 公里。Performance 高性能全轮驱动版使用 19 英寸轮毂，官网预估续航为 647 公里。实际续航会随车速、天气、温度控制、路况和驾驶方式变化。",
+    "section": "续航差异",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_configuration_current",
+    "source_url": "https://www.tesla.cn/model3"
+  },
+  "tesla_model3_rwd_cn_configuration_current:充电功率差异": {
+    "text": "## 充电功率差异\n\n后轮驱动版和长续航后轮驱动版的最高充电功率为 170 千瓦；长续航全轮驱动版和 Performance 高性能全轮驱动版为 250 千瓦。这里是车辆可接受的峰值功率，不代表每次充电都能持续达到该数值。",
+    "section": "充电功率差异",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_configuration_current",
+    "source_url": "https://www.tesla.cn/model3"
+  },
+  "tesla_model3_rwd_cn_configuration_current:音响和性能装备差异": {
+    "text": "## 音响和性能装备差异\n\n音响配置方面，长续航全轮驱动版配有 15 个扬声器、2 个低音炮和 2 个功放；官网脚注说明后轮驱动版与长续航后轮驱动版配有 9 个扬声器。Performance 高性能全轮驱动版还提供性能驱动单元、连续可变阻尼减振器、高性能底盘与制动装置及赛道模式。未在当前官方产品页明确列出的细节不作推断。",
+    "section": "音响和性能装备差异",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_configuration_current",
+    "source_url": "https://www.tesla.cn/model3"
+  },
+  "tesla_model3_rwd_cn_manual_coverage_2024plus:打开和关闭": {
+    "text": "## 打开和关闭\n\nModel 3 可使用已认证的手机钥匙、卡片钥匙或遥控钥匙（如果配备）解锁和启动车辆。手机钥匙需要在 Tesla 手机应用程序中完成配对并保持蓝牙开启；即使通常使用手机钥匙，也建议随身携带可用的实体钥匙。车门、车锁和儿童锁可通过触摸屏“控制”菜单管理，车窗通过车门开关操作。无电或紧急情况下的机械开门方式与正常操作不同，应按车主手册对应章节操作。",
+    "section": "打开和关闭",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_manual_coverage_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/Owners_Manual.pdf"
+  },
+  "tesla_model3_rwd_cn_manual_coverage_2024plus:储物区域": {
+    "text": "## 储物区域\n\nModel 3 的储物区域包括后备箱、前备箱、手套箱、中控台储物格、杯架和车门储物格。后备箱可通过触摸屏、Tesla 手机应用程序或外部把手打开；前备箱可通过触摸屏或手机应用程序打开。关闭前备箱时应按手册指定位置轻压锁止，不要猛摔或只按压前缘。手套箱可在触摸屏中点击“控制” > “手套箱”打开。",
+    "section": "储物区域",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_manual_coverage_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/Owners_Manual.pdf"
+  },
+  "tesla_model3_rwd_cn_manual_coverage_2024plus:打开前备箱": {
+    "text": "## 打开前备箱\n\n车辆处于驻车挡时，可在触摸屏中点击“控制”并选择“打开前备箱”，也可在 Tesla 手机应用程序中点击前备箱按钮。关闭时先放低前备箱盖直至碰到闩锁，再将双手放在前备箱盖前部指定区域向下按压，使闩锁接合；不要猛摔前备箱盖，也不要只用一只手或按压前缘、边缘和饰件。低压电源失效时需要使用手册“在没电的情况下打开前备箱盖”中的单独程序。",
+    "section": "打开前备箱",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_manual_coverage_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/Owners_Manual.pdf"
+  },
+  "tesla_model3_rwd_cn_manual_coverage_2024plus:没电时打开前备箱": {
+    "text": "## 没电时打开前备箱\n\n仅在车辆没有低压电源、无法通过触摸屏或手机应用程序打开前备箱时使用此程序。准备外接低压电源，从车辆前部牵引环盖板处取出红、黑两根导线；将外接电源正极接红色端、负极接黑色端，再启动外接电源释放前备箱锁。释放后先断开黑色负极线。该连接只能释放锁扣，不能给低压电池充电，并且不应连接超过 30 秒。车辆仍有低压电源且已上锁时，此方法不会解锁前备箱。",
+    "section": "没电时打开前备箱",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_manual_coverage_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/Owners_Manual.pdf"
+  },
+  "tesla_model3_rwd_cn_manual_coverage_2024plus:座椅和安全约束系统": {
+    "text": "## 座椅和安全约束系统\n\n前排座椅可调节位置、靠背和腰部支撑，后排座椅靠背可折叠以扩展载物空间；恢复直立位置后应确认靠背已锁定。所有乘员都应正确使用座椅安全带，气囊只用于补充安全带保护，不能替代安全带。儿童应使用符合其年龄、体重和体形的儿童约束系统，并按约束系统制造商说明安装；使用副驾位儿童座椅前必须核对前排乘客安全气囊状态。ISOFIX/i-Size 固定点和适用座位应以车内手册说明为准。",
+    "section": "座椅和安全约束系统",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_manual_coverage_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/Owners_Manual.pdf"
+  },
+  "tesla_model3_rwd_cn_manual_coverage_2024plus:网络连接": {
+    "text": "## 网络连接\n\nTesla 手机应用程序可用于远程查看和控制部分车辆功能。远程通信通常要求手机和车辆连接蜂窝网络或 Wi-Fi，近距离命令也可通过已配对手机的蓝牙发送。Model 3 可连接 Wi-Fi 获取网络和软件更新，也可配对蓝牙设备用于免提通话、媒体、日历和短信等功能。功能是否可用可能受手机权限、网络、车载娱乐服务、车辆配置和软件版本影响。",
+    "section": "网络连接",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_manual_coverage_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/Owners_Manual.pdf"
+  },
+  "tesla_model3_rwd_cn_manual_coverage_2024plus:连接手机蓝牙": {
+    "text": "## 连接手机蓝牙\n\n坐在车内并确保触摸屏开启，然后解锁手机并打开蓝牙。在车辆触摸屏中点击“控制” > “蓝牙”，等待扫描到手机后点击“连接”；确认手机与触摸屏显示的号码一致，再在手机上同意配对。手机提示时，可选择是否允许车辆访问联系人、最近通话、日历和媒体。手机钥匙配对与免提通话、媒体使用的蓝牙配对不是同一项设置。",
+    "section": "连接手机蓝牙",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_manual_coverage_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/Owners_Manual.pdf"
+  },
+  "tesla_model3_rwd_cn_manual_coverage_2024plus:驾驶和驻车": {
+    "text": "## 驾驶和驻车\n\n携带有效钥匙进入车辆后，踩下制动踏板即可准备驾驶；换挡、驻车和车辆保持应按触摸屏提示及车辆实际控制方式操作。方向盘控制可用于调节部分驾驶设置，雨刮器、车灯、制动、驻车辅助、车辆保持、牵引力控制、加速模式、驾驶员设定、旅程信息和后置摄像头均有独立手册章节。驾驶员必须根据道路和天气条件主动控制车辆，不能把便利功能当作安全保障。",
+    "section": "驾驶和驻车",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_manual_coverage_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/Owners_Manual.pdf"
+  },
+  "tesla_model3_rwd_cn_manual_coverage_2024plus:主动安全功能": {
+    "text": "## 主动安全功能\n\n主动安全相关章节包括车道辅助、防撞辅助、车速辅助和驾驶室摄像头。防撞辅助包含前撞预警、自动紧急制动和障碍物感应限速；这些功能旨在降低风险或碰撞严重程度，但不能保证识别所有车辆、行人或障碍物，也不能替代驾驶员观察、判断和制动。摄像头受遮挡、车道线不清、恶劣天气或强光等情况可能影响功能表现。",
+    "section": "主动安全功能",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_manual_coverage_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/Owners_Manual.pdf"
+  },
+  "tesla_model3_rwd_cn_manual_coverage_2024plus:行车记录仪和车辆安全": {
+    "text": "## 行车记录仪和车辆安全\n\n行车记录仪可在合适的 USB 存储设备上保存摄像头视频；哨兵模式用于车辆上锁并处于驻车挡时监测周围活动。相关栏目还包括安全警报、行车记录仪、哨兵模式及 USB 设备格式要求。录像能力、摄像头范围和通知方式可能因车辆配置、生产日期、软件版本、存储设备和网络服务而不同，且不能依靠这些功能抵御所有安全威胁。",
+    "section": "行车记录仪和车辆安全",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_manual_coverage_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/Owners_Manual.pdf"
+  },
+  "tesla_model3_rwd_cn_manual_coverage_2024plus:温度控制": {
+    "text": "## 温度控制\n\n点击触摸屏底部的温度可进入温度控制。自动模式会根据设定温度调节加热、空调、气流和风扇；还可使用温度分区、座椅加热或制冷（如果配备）、前后挡风玻璃除霜以及通风口调节。车辆处于驻车挡时，可使用保持温度控制、宠物模式或露营模式，并可预约预设驾驶室和电池温度。温度控制由高压电池供电，长时间使用会减少可用续航。",
+    "section": "温度控制",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_manual_coverage_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/Owners_Manual.pdf"
+  },
+  "tesla_model3_rwd_cn_manual_coverage_2024plus:导航和娱乐": {
+    "text": "## 导航和娱乐\n\n可在地图搜索栏输入目的地、使用语音命令或从 Tesla 手机应用程序向车辆分享目的地。导航支持添加和调整经停点、路线偏好、在线路线规划以及行程规划；行程规划可按需要在路线中加入超级充电站，并持续估算到达时的剩余电量。实时交通、部分地图信息、媒体和网络娱乐可能需要网络连接或相应车载娱乐服务。剧场和游戏等功能应仅在车辆允许的状态下使用。",
+    "section": "导航和娱乐",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_manual_coverage_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/Owners_Manual.pdf"
+  },
+  "tesla_model3_rwd_cn_manual_coverage_2024plus:充电和能耗": {
+    "text": "## 充电和能耗\n\n充电和能耗栏目包括车辆电气部件、高压电池、充电说明、定时预设温度和充电、续航建议及高压电池运行状况。车辆可在触摸屏的充电页面查看和调整充电设置，并通过预约功能设置充电或出发时间。实际能耗和续航会受车速、驾驶方式、天气、温度控制、地形、载荷和电池状态影响。高压系统没有可由用户自行维修的部件，不应拆卸或触碰高压部件、线缆或连接器。",
+    "section": "充电和能耗",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_manual_coverage_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/Owners_Manual.pdf"
+  },
+  "tesla_model3_rwd_cn_manual_coverage_2024plus:软件和日常维护": {
+    "text": "## 软件和日常维护\n\n软件更新可通过车辆网络连接下载，并在触摸屏的“控制” > “软件”中查看状态和安排安装。日常维护包括检查轮胎及胎压、制动液、雨刮器和清洗液，并按车辆提示或车主手册安排维修。轮胎、举升点、零配件和临时轮胎修理工具均有专门限制，涉及高压系统、举升或不熟悉的维修操作时应交由合格人员处理。",
+    "section": "软件和日常维护",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_manual_coverage_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/Owners_Manual.pdf"
+  },
+  "tesla_model3_rwd_cn_manual_coverage_2024plus:紧急情况和运输": {
+    "text": "## 紧急情况和运输\n\n紧急情况栏目包括联系 Tesla 道路救援、紧急呼叫、车辆无法行驶或超出续航、低压电源失效时打开前备箱或车门、跳线跨接启动以及浸水车辆处理。运输 Model 3 时应遵循手册的运输方式，避免因车轮不当转动损坏车辆。发生事故、起火、浸水或高压系统疑似受损时，应先远离危险并联系当地紧急服务和 Tesla，不要自行接触高压部件。",
+    "section": "紧急情况和运输",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_manual_coverage_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/Owners_Manual.pdf"
+  },
+  "tesla_model3_rwd_cn_manual_coverage_2024plus:后备箱-手套箱和车内储物": {
+    "text": "## 后备箱、手套箱和车内储物\n\n后备箱可通过触摸屏、Tesla 手机应用程序或外部把手打开，装载后应确认行李不会妨碍后备箱盖锁止。手套箱通过“控制” > “手套箱”打开；中控台、杯架和车门储物格适合放置随身物品。折叠后排靠背可扩展载物空间，恢复后必须确认靠背锁定，重物应妥善固定。",
+    "section": "后备箱、手套箱和车内储物",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_manual_coverage_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/Owners_Manual.pdf"
+  },
+  "tesla_model3_rwd_cn_manual_coverage_2024plus:雨刮器-车辆保持和驻车": {
+    "text": "## 雨刮器、车辆保持和驻车\n\n雨刮器可通过车辆控制界面或方向盘相关控制调节，自动雨刮的表现会受摄像头视野、雨雪和光线影响。车辆保持可在车辆完全停止后帮助维持驻车状态，但驾驶员仍应观察仪表提示并准备制动；离车前应确认车辆已进入驻车挡。",
+    "section": "雨刮器、车辆保持和驻车",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_manual_coverage_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/Owners_Manual.pdf"
+  },
+  "tesla_model3_rwd_cn_manual_coverage_2024plus:定时充电-出发时间和续航建议": {
+    "text": "## 定时充电、出发时间和续航建议\n\n可在充电或预约界面设置定时充电、结束充电或计划出发时间，让车辆在合适时段充电并提前调节驾驶室和电池温度。设置后应在触摸屏或应用中确认计划生效。降低高速行驶、急加速和不必要的温度控制负荷有助于减少能耗；导航显示的到达电量会随行程条件动态变化。",
+    "section": "定时充电、出发时间和续航建议",
+    "vehicle_id": "model3-rwd-cn-current",
+    "document_id": "tesla_model3_rwd_cn_manual_coverage_2024plus",
+    "source_url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/Owners_Manual.pdf"
+  }
+}
