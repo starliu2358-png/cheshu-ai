@@ -1,7 +1,7 @@
 {
   "title": "车书 Agent V1.0——核心业务能力验收与多轮对话可靠性优化",
   "review_date": "2026-10-18",
-  "scope": "React/FastAPI /api/v1/answers only; excludes legacy Gradio",
+  "scope": "React/FastAPI /api/v1/answers",
   "suggestion_source": "https://chatgpt.com/share/6ad39e59-bcc4-83ec-8a23-7f584a19908e",
   "suite_note": "分享链接给出5/4/4/5/6案例配额和辅助转向追问示例；完整题目由本项目在运行前固定。",
   "runs": {
@@ -47,5 +47,5 @@
   "first_full_budgets": {"max_model_turns": 3, "max_retrieval_calls": 2, "max_agent_duration_ms": 5234},
   "release_decision": "NOT_FULLY_CERTIFIED",
   "release_reason": "功能闭环与P0最小改造完成；不能把HTTP成功/有正文等同于事实准确或引用正确。保留首轮与复测失败，尚未完成最终代码全套重复跑、逐句引用覆盖和关键安全错误复核。",
-  "next_priorities": ["P0重复验证多轮和校验失败", "P1完善操作资料、答案证据覆盖和配置因果表述", "P2保持时间星期问候能力，不扩展天气新闻或旧Gradio链路"]
+  "next_priorities": ["P0重复验证多轮和校验失败", "P1完善操作资料、答案证据覆盖和配置因果表述", "P2保持时间星期问候能力，不扩展天气新闻"]
 }

@@ -1,43 +1,82 @@
-# 车书 AI · V1.0
+# 车书 Agent
 
-React + FastAPI + OpenAI Agents SDK + DeepSeek 的单 Agent 车辆手册助手。
-支持手册问答、引用查看、配置比较、连续追问、主动换题及 SQLite 本机会话持久化。
+**车书 Agent 是一个能够理解车辆专业问题、检索可靠资料、支持连续追问，并提供有价值回答的汽车知识助手。**
 
-本项目不是 Tesla 官方产品，不读取实时车况、不控制真实车辆、不具备通用联网搜索。
-回答可能出错，请核查重要信息；驾驶中请勿操作。本版本用于本机单用户体验，不应直接暴露公网。
+以车辆手册和官方资料为主要依据，将车辆问题转化为检索任务，通过工具调用查找相关内容，回答并提供引用，减少用户翻阅手册、查找配置和理解专业描述的成本。
 
-## 能力与架构
+![车书 Agent 实际操作演示：哨兵模式提问](docs/assets/cheshu-demo.gif)
 
-- 单 Agent 调用证据型工具、改写查询；Python 限制最多 6 个模型轮次、3 次检索、15 秒总时限。
-- 带引用回答经过模型证据复核；引用只能来自本轮证据。复核不保证完全正确。
-- 默认 BM25；可选 BGE + FAISS + RRF 混合检索，Reranker 不默认启用。
-- 结构化会话状态、简化记忆压缩；SQLite 保存对话、重命名、置顶和反馈。
-- 四种 Model 3 配置只读展示；配置问题可在问题中注明版本。
-- 麦克风打开语音菜单；点击开始输入才申请权限。自动播放默认关闭，本机浏览器记住偏好，保留手动播放。
+## 能解决什么问题？
 
-展示四种配置不等于每次检索全部配置：API 仍保留会话绑定 Profile；初次会话默认列表首项后驱版，
-后续新会话沿用当前绑定，旧会话不改变绑定。
-Python 包名保留为 `cockpit_agent` 仅用于兼容；没有 Gradio、车辆控制或 MCP 演示链路。
+- **车辆功能问答**：解释功能是什么、如何操作、使用条件及限制
+- **手册检索**：检索手册相关章节及内容，回答引用对应资料
+- **配置差异对比**：对比不同配置的功能差异，准确说明相同点及不同点
+- **查看回答依据**：通过引用查看对应的资料章节与来源。
 
-## 安装与启动（PowerShell）
+## 交互方式
 
-需要 Python 3.10+、Node.js 22.12+ 和自己的 DeepSeek API Key。在仓库根目录执行：
+- **文字问答**：输入车辆问题；支持结合上下文连续追问，也允许主动切换话题。
+- **语音输入**：点击麦克风打开语音菜单；转写内容可编辑，确认后再发送。
+- **语音回复**：可自行设置打开“语音自动回复”，自动播放默认关闭，可在语音菜单中开启，偏好保存在当前浏览器。
+- **对话管理**：支持重命名、置顶或取消置顶；会话历史可保存。
+- **引用查看**：点击回答下方的引用，查看资料章节和来源，辅助核查重要信息。
+
+
+## 安装与运行
+
+### 环境要求
+
+- Python 3.10+
+- Node.js 22.12+
+- DeepSeek API Key
+
+以下命令以 Windows PowerShell 为例。
+
+### 1. git clone
+
+```powershell
+git clone https://github.com/starliu2358-png/cheshu-ai.git
+cd cheshu-ai
+```
+
+### 2. 安装后端依赖
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -e ".[dev]"
+```
+
+### 3. 配置模型
+
+```powershell
 Copy-Item .env.example .env
 notepad .env
 ```
 
-填写 DEEPSEEK_API_KEY；DEEPSEEK_MODEL 以账户实际可用型号为准，随附验收使用 deepseek-flash。
-不要提交或分享 .env。启动后端：
+如果已有 `.env`，直接编辑，不要覆盖自己的配置。主要设置如下：
+
+```dotenv
+DEEPSEEK_API_KEY=your_deepseek_api_key_here
+DEEPSEEK_BASE_URL=https://api.deepseek.com
+DEEPSEEK_MODEL=deepseek-flash
+
+CHESHU_EXECUTION_MODE=agent
+CHESHU_RETRIEVAL_MODE=bm25
+```
+
+填写自己的 API Key。
+
+### 4. 启动后端
+
+在仓库根目录执行，并保持终端运行：
 
 ```powershell
 .\.venv\Scripts\python.exe -m uvicorn cockpit_agent.api:app --host 127.0.0.1 --port 8000
 ```
 
-另开终端启动前端：
+### 5. 启动前端
+
+另开一个终端，先进入本地 `cheshu-ai` 仓库根目录，再执行：
 
 ```powershell
 cd frontend
@@ -45,55 +84,75 @@ npm ci
 npm run dev -- --host 127.0.0.1
 ```
 
-打开 http://127.0.0.1:5173 ，API 文档为 http://127.0.0.1:8000/docs 。
-前端代理 /api 到后端；`npm run build` 生成静态文件，但 FastAPI 不自动托管该目录。
-仓库尚无公网认证、多用户权限、TLS 或生产部署方案。
+打开[车书网页](http://127.0.0.1:5173)。
 
-### 可选混合检索
+## 架构设计
 
-在根目录执行：
+前端：React + TypeScript + Vite
 
-```powershell
-.\.venv\Scripts\python.exe -m pip install -e ".[retrieval]"
-.\.venv\Scripts\python.exe -m scripts.build_vector_index
+├─ 前端
+└─ 后端
+   ├─ API 服务
+   ├─ Agent ：LLM + Tool Calling + Agent Loop
+   ├─ RAG 检索与证据校验
+   └─ 会话状态与持久化
+
+### Agent
+
+- API 层：FastAPI 接收问题、处理会话和反馈请求。
+- Agent ：DeepSeek 作为 LLM，OpenAI Agents SDK 编排模型与工具循环，Python 实现工具、预算限制和输出校验。
+- RAG 检索层：检索车辆资料，为 Agent 提供回答证据。
+- 会话状态与持久化
+
+## 仓库结构
+
+```text
+cheshu-ai/                       
+├─ frontend/                     # React + TypeScript + Vite 前端
+├─ src/cockpit_agent/            # 车书后端 Python 包
+│  ├─ api.py                     # FastAPI 问答与会话
+│  └─ vehicle_book/              # Agent、RAG、证据校验与会话逻辑
+│     ├─ agent_loop.py           # 模型与工具循环
+│     ├─ retriever.py            # BM25 检索
+│     ├─ hybrid_retriever.py     # 向量检索
+│     ├─ session.py              # 结构化会话状态
+│     └─ sqlite_session.py       # 会话持久化
+├─ data/                         # 知识资料与评测数据
+│  ├─ knowledge/                 # 车辆知识正文
+│  ├─ registry/                  # 车型、文档、版本等元数据
+│  ├─ eval/                      # 检索和回答评测数据集
+│  └─ baselines/                 # 回归评测基线
+├─ scripts/                      # 索引构建与评测脚本
+├─ tests/                        # 后端自动化测试
+├─ docs/                         # 素材
+│  └─ assets/                    # README 
+│     └─ cheshu-demo.gif         # 素材
+├─ outputs/                      # 评测结果与本地运行产物
+├─ .env.example                  # 环境变量配置示例
+└─ pyproject.toml                # Python 依赖及测试配置
 ```
+## 当前范围与局限
 
-首次下载 BAAI/bge-small-zh-v1.5，需要网络和额外资源。
-建索引后将 .env 中 CHESHU_RETRIEVAL_MODE 改为 hybrid，重启后端。
-默认 BM25 无需下载向量模型；CHESHU_EXECUTION_MODE=rag 可回退固定 RAG。
+### 支持的车型
 
-## 测试与验收
+目前整理了 Tesla Model 3 中国市场以下配置的部分资料：
 
-```powershell
-.\.venv\Scripts\python.exe -m pytest -q
-cd frontend
-npm test
-npm run build
-```
+- 后轮驱动版
+- 长续航后轮驱动版
+- 长续航全轮驱动版
+- 高性能全轮驱动版
 
-真实模型评测会产生 API 费用，在根目录执行：
+**暂不支持其他品牌、其他车型的知识问答，也不保证覆盖上述车型的全部功能、年份和软件版本。**
 
-```powershell
-.\.venv\Scripts\python.exe -m scripts.run_core_acceptance
-.\.venv\Scripts\python.exe -m scripts.run_core_acceptance --regressions
-```
+## 版本与后续迭代
 
-随附三次真实模型验收（28 案例、各 50 轮）和 11 轮定向回归是拆仓前证据，
-原始 manifest 指向原仓库提交和本地路径，不冒充新仓再次运行。
-见 [验收报告](outputs/eval/core_acceptance/reliability_review_20261018.json)、
-[版本说明](docs/RELEASE_NOTES_V1.0.md)、[已知问题](docs/KNOWN_ISSUES.md)。
+当前版本：[V1.0.0 Release](https://github.com/starliu2358-png/cheshu-ai/releases/tag/v1.0.0)。
 
-## 数据、隐私与来源
+后续优先围绕汽车专业问答质量改进：
 
-会话保存在 outputs/state/cheshu.sqlite3；运行日志保存在 outputs/logs。
-这些私有本地文件不随仓库分发。DeepSeek 会接收问题、上下文和检索片段，不要输入敏感信息。
-自动播放偏好按浏览器保存，不跨设备同步。
+- 提高配置差异问答准确性。
+- 优化连续追问、回答精简和引用表达。
+- 充知识覆盖，再逐步支持更多车型。
 
-资料登记在 data/registry/documents.json，正文在 data/knowledge。
-Tesla 文档和商标归原权利人所有；整理资料不构成官方背书或对第三方材料的再授权。
-OEM Alpha 是用于隔离测试的虚构车型数据，不是前端产品车型。
-
-独立仓库使用全新 Git 历史。原历史保留在
-[ai-cockpit-agent / feat/cheshu-ai-v1](https://github.com/starliu2358-png/ai-cockpit-agent/tree/feat/cheshu-ai-v1)，
-基点 7c4264ae7b9ca70ed993ae19cd45c619779f806e。
-V1.0 是车书产品版本，不是退回 BM25-only 技术阶段，也不代表全部严格门禁通过。
+> 当前为 V1.0 版本，主要覆盖 Tesla Model 3 中国市场的部分车型与知识内容。非 Tesla 官方产品，回答可能出错，请核查重要信息；驾驶中请勿操作。
+>

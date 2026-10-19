@@ -1,7 +1,7 @@
 """Opt-in real-model product acceptance. Mechanical checks are not correctness grades.
 
 24 product cases (5/4/4/5/6), plus 4 basic interactions. Each multi case has 4 turns.
-Only the FastAPI Vehicle Book path is exercised; no Gradio/cockpit-control imports.
+Exercises the FastAPI Vehicle Book question-answering path.
 """
 from __future__ import annotations
 
